@@ -1,0 +1,36 @@
+ManifestFileVersion: 0
+CRC: 768505799
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 42912a1356277837a94c5101b85a489c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 74c082f1516a992d70ee3935aac705ac
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5c2d328d259791744bb8539650a9c619, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 61b00a8e76a237e429174e8bc253901f, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/Prefabs/ArtificialGravity.prefab
+Dependencies: []
