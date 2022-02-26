@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 768505799
+CRC: 2714056626
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 42912a1356277837a94c5101b85a489c
+    Hash: 26ad074627788f65588df7fa5f2fd3fd
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 74c082f1516a992d70ee3935aac705ac
+    Hash: 52902132bfd742607e0e80664a67c19b
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -31,6 +31,7 @@ ClassTypes:
   Script: {fileID: 11500000, guid: 61b00a8e76a237e429174e8bc253901f, type: 3}
 - Class: 115
   Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/Prefabs/ArtificialGravity.prefab
+- Assets/Examples/ArtificialGravity.prefab
 Dependencies: []
