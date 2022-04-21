@@ -4,6 +4,10 @@ Template Unity Project with Outer Wilds scripts in it, meant for making AssetBun
 Works with Unity **2019.4.27f1**. You need to use specifically **this version.** 
 Newer versions will not work, as AssetBundles are not forward-compatible.
 
+To make textures look right you have to change the colour space in project settings.
+Edit -> Project Settings -> Player -> Other Settings -> Rendering -> Color Space
+Change it to `linear`.
+
 ### How to use
 
 1. Clone the template and load it into Unity with **2019.4.27f1**
