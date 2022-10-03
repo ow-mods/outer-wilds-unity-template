@@ -12,7 +12,7 @@ Change it to `linear`.
 
 ### How to use
 
-1. Clone the template and load it into Unity with **2019.4.27f1**
+1. Clone the template and load it into Unity with **2019.4.39f1**
 2. Open the *Project Settings*, change paths and options as required
 3. Build your content (usually into a prefab) and label it to be build into an AssetBundle.
 4. In the top bar, go *Assets > Build AssetBundles*
