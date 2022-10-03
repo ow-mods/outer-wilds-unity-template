@@ -1,7 +1,7 @@
 # Outer Wilds : Unity Template
 Template Unity Project with Outer Wilds scripts in it, meant for making AssetBundles to use in mods (such as new horizons).
 
-Works with Unity **2019.4.27f1**. You need to use specifically **this version.** 
+Works with Unity **2019.4.39f1**. You need to use specifically **this version.** 
 Newer versions will not work, as AssetBundles are not forward-compatible.
 
 To make textures look right you have to change the colour space in project settings.
