@@ -14,17 +14,17 @@ public class AutoRotator : MonoBehaviour
 	[SerializeField]
 	private RotationAxis _actualRotationAxis;
 	[SerializeField]
-	private float _totalRotationTime;
+	private float _totalRotationTime = -1f;
 	[SerializeField]
 	private float _maxRotationSpeed;
 	[SerializeField]
-	private DampedSpringRadial _rotationSpringRampUp;
+	private DampedSpringRadial _rotationSpringRampUp = new DampedSpringRadial();
 	[SerializeField]
-	private DampedSpringRadial _rotationSpringRampDown;
+	private DampedSpringRadial _rotationSpringRampDown = new DampedSpringRadial();
 	[SerializeField]
 	private bool _startOnLoad;
 	[SerializeField]
-	private bool _rampUpRotation;
+	private bool _rampUpRotation = true;
 	[SerializeField]
-	private bool _rampDownRotation;
+	private bool _rampDownRotation = true;
 }

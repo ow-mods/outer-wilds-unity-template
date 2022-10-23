@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(SubmitAction))]
+[RequireComponent(typeof(Button))]
 public class ButtonWithHotkeyImageElement : MonoBehaviour
 {
 	[SerializeField]
@@ -15,14 +17,16 @@ public class ButtonWithHotkeyImageElement : MonoBehaviour
 	private GameObject _imageOneLayoutObject;
 	[SerializeField]
 	private GameObject _imageTwoLayoutObject;
+	[Space(10f)]
 	[SerializeField]
 	private RectTransform _graphicElementsRootTransform;
 	[SerializeField]
 	private LayoutElement _hotkeyImageOneLayoutElement;
 	[SerializeField]
 	private LayoutElement _hotkeyImageTwoLayoutElement;
+	[Space(10f)]
 	[SerializeField]
 	private LayoutElement _spacerElement;
 	[SerializeField]
-	private float _imageToTextElementSpacing;
+	private float _imageToTextElementSpacing = 10f;
 }

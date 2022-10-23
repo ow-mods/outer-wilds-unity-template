@@ -20,4 +20,13 @@ public class MemoryUplinkTrigger : MonoBehaviour
 	private TransformAnimator[] _lowerLidAnimators;
 	[SerializeField]
 	private OWAudioSource _statueAudioSource;
+
+	private void OnDrawGizmos()
+	{
+		if (_lockOnTransform != null)
+		{
+			Gizmos.color = Color.red;
+			Gizmos.DrawSphere(_lockOnTransform.TransformPoint(_lockOnOffset), 0.05f);
+		}
+	}
 }

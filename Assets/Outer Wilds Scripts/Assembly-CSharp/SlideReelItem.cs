@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(SlideCollectionContainer))]
 public class SlideReelItem : OWItem
 {
 	[SerializeField]

@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(OWRigidbody))]
 public class UnsuspendTrigger : MonoBehaviour
 {
 	[SerializeField]

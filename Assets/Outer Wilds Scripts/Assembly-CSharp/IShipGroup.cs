@@ -1,3 +1,3 @@
-public class IShipGroup
+public interface IShipGroup
 {
 }

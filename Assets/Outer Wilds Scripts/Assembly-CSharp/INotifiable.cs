@@ -1,3 +1,3 @@
-public class INotifiable
+public interface INotifiable
 {
 }

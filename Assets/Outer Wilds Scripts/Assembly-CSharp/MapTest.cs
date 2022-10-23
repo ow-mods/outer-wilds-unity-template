@@ -11,7 +11,8 @@ public class MapTest : MonoBehaviour
 	[SerializeField]
 	private float _speed;
 	[SerializeField]
-	private float _maxDist;
+	private float _maxDist = 40f;
+	[Space]
 	[SerializeField]
 	private bool _visitOrderColors;
 	[SerializeField]

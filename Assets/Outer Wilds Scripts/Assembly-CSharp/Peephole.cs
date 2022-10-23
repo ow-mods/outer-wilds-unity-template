@@ -12,19 +12,24 @@ public class Peephole : MonoBehaviour
 	[SerializeField]
 	private Sector _viewingSector;
 	[SerializeField]
-	private float _enterTransitionInLength;
+	private OWRenderer _hideWhileViewing;
+	[Space]
 	[SerializeField]
-	private float _exitTransitionOutLength;
+	private float _enterTransitionInLength = 0.25f;
 	[SerializeField]
-	private float _exitZoomOutLength;
+	private float _exitTransitionOutLength = 0.15f;
 	[SerializeField]
-	private float _enterCloseEyesLength;
+	private float _exitZoomOutLength = 0.5f;
+	[Space]
 	[SerializeField]
-	private float _enterOpenEyesLength;
+	private float _enterCloseEyesLength = 0.25f;
 	[SerializeField]
-	private float _exitCloseEyesLength;
+	private float _enterOpenEyesLength = 0.25f;
 	[SerializeField]
-	private float _exitOpenEyesLength;
+	private float _exitCloseEyesLength = 0.25f;
 	[SerializeField]
-	private string[] _factIDs;
+	private float _exitOpenEyesLength = 0.25f;
+	[Space]
+	[SerializeField]
+	private string[] _factIDs = new string[0];
 }

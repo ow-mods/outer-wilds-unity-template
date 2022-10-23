@@ -25,24 +25,32 @@ public class SettingsMenuView : MonoBehaviour
 	private MenuValueOption _confirmToggleOption;
 	[SerializeField]
 	private KeyRebindingElement[] _listRebindableOptions;
+	[Space(20f)]
 	[SerializeField]
 	private ButtonWithHotkeyImageElement _resetToDefaultButton;
 	[SerializeField]
 	private ButtonWithHotkeyImageElement _closeMenuButton;
 	[SerializeField]
 	private ButtonWithHotkeyImageElement _cancelRebindingButton;
-	[SerializeField]
-	private InputEventListener _cancelRebindingButtonListener;
+	[Space(10f)]
 	[SerializeField]
 	private SubmitAction _resetSettingsActionByCommand;
 	[SerializeField]
 	private SubmitAction _resetSettingsAction;
 	[SerializeField]
+	private SubmitAction _cancelRebindingActionByCommand;
+	[SerializeField]
+	private SubmitAction _cancelRebindingAction;
+	[SerializeField]
 	private SubmitAction _closeMenuAction;
+	[Space(10f)]
 	[SerializeField]
 	private Image _consoleConfirmOptionImgOne;
 	[SerializeField]
 	private Image _consoleConfirmOptionImgTwo;
+	[Space(10f)]
+	[SerializeField]
+	private InputEventListener _cancelRebindingButtonListener;
 	[SerializeField]
 	private GameObject _raycastBlocker;
 }

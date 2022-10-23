@@ -3,7 +3,7 @@ using UnityEngine;
 public class NomaiLamp : MonoBehaviour
 {
 	[SerializeField]
-	private bool _startOn;
+	private bool _startOn = true;
 	[SerializeField]
 	private Renderer[] _emissiveRenderers;
 	[SerializeField]

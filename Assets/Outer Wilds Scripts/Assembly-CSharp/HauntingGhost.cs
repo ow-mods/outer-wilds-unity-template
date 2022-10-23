@@ -8,6 +8,7 @@ public class HauntingGhost : MonoBehaviour
 	private OWAudioSource _oneShotSource;
 	[SerializeField]
 	private LightCodeReader _lightCodeOpener;
+	[Space]
 	[SerializeField]
 	private bool _seeInAdjacentRooms;
 	[SerializeField]

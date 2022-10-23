@@ -12,6 +12,7 @@ public class PrisonCellElevator : MonoBehaviour
 	private OWCollider _proxyCollider;
 	[SerializeField]
 	private OWTriggerVolume[] _killTriggers;
+	[Header("Floors")]
 	[SerializeField]
 	private AbstractDoor _topDoor;
 	[SerializeField]
@@ -24,12 +25,14 @@ public class PrisonCellElevator : MonoBehaviour
 	private Transform[] _floors;
 	[SerializeField]
 	private int _startFloorIndex;
+	[Header("Speed")]
 	[SerializeField]
-	private float _maxAccel;
+	private float _maxAccel = 1f;
 	[SerializeField]
-	private float _maxDecel;
+	private float _maxDecel = 3f;
 	[SerializeField]
-	private float _maxSpeed;
+	private float _maxSpeed = 10f;
+	[Header("Audio")]
 	[SerializeField]
 	private OWAudioSource _oneShotAudio;
 	[SerializeField]

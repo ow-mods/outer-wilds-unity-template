@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class AbstractDoor : MonoBehaviour
+public abstract class AbstractDoor : MonoBehaviour
 {
 	[SerializeField]
 	private AbstractGhostDoorInterface _interface;

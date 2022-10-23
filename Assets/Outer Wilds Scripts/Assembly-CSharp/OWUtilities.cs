@@ -1,3 +1,3 @@
-public class OWUtilities
+public static class OWUtilities
 {
 }

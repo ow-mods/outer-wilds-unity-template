@@ -1,3 +1,3 @@
-public class IProfileManager
+public interface IProfileManager
 {
 }

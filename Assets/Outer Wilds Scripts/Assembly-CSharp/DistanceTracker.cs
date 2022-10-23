@@ -1,5 +1,5 @@
 using UnityEngine;
 
-public class DistanceTracker : MonoBehaviour
+public abstract class DistanceTracker : MonoBehaviour
 {
 }

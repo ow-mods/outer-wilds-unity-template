@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Collider))]
 public class RepairReceiver : MonoBehaviour
 {
 	public enum Type
@@ -18,5 +19,5 @@ public class RepairReceiver : MonoBehaviour
 	[SerializeField]
 	private SatelliteNode _targetSatNode;
 	[SerializeField]
-	private float _repairDistance;
+	private float _repairDistance = 3f;
 }

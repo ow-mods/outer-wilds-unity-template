@@ -1,5 +1,5 @@
 public class PlayerImpactRuleset : RulesetVolume
 {
-	public float minImpactSpeed;
-	public float maxImpactSpeed;
+	public float minImpactSpeed = 20f;
+	public float maxImpactSpeed = 40f;
 }

@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Shape))]
 public class PrefabSpawner : MonoBehaviour
 {
 	[SerializeField]

@@ -1,6 +1,7 @@
 using UnityEngine.UI;
 using UnityEngine;
 
+[RequireComponent(typeof(Canvas))]
 public class PopupMenu : Menu
 {
 	[SerializeField]
@@ -13,6 +14,7 @@ public class PopupMenu : Menu
 	protected ButtonWithHotkeyImageElement _cancelButton;
 	[SerializeField]
 	protected ButtonWithHotkeyImageElement _confirmButton;
+	[Header("Root Canvas, cannot be the same as the Canvas on PopupMenu")]
 	[SerializeField]
 	protected Canvas _rootCanvas;
 }

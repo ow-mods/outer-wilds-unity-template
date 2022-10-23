@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(RectTransform))]
 public class OffScreenIndicator : MonoBehaviour
 {
 	[SerializeField]
@@ -8,5 +9,5 @@ public class OffScreenIndicator : MonoBehaviour
 	[SerializeField]
 	private RectTransform _arrow;
 	[SerializeField]
-	private float _screenMargin;
+	private float _screenMargin = 20f;
 }

@@ -3,7 +3,8 @@ using UnityEngine;
 public class OldDreamCandle : MonoBehaviour
 {
 	[SerializeField]
-	private bool _startLit;
+	private bool _startLit = true;
+	[Space]
 	[SerializeField]
 	private GameObject _objectsVisibleInLight;
 	[SerializeField]
@@ -12,6 +13,7 @@ public class OldDreamCandle : MonoBehaviour
 	private GhostController[] _ghostsToWake;
 	[SerializeField]
 	private DarkZone _darkZone;
+	[Space]
 	[SerializeField]
 	private InteractReceiver _interactReceiver;
 	[SerializeField]

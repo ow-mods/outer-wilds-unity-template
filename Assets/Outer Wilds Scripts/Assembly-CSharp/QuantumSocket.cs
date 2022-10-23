@@ -3,7 +3,7 @@ using UnityEngine;
 public class QuantumSocket : MonoBehaviour
 {
 	[SerializeField]
-	private int _probabilityMultiplier;
+	private int _probabilityMultiplier = 1;
 	[SerializeField]
 	private GameObject _emptySocketObject;
 	[SerializeField]

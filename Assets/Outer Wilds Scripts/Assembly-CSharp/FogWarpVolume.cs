@@ -4,6 +4,8 @@ public class FogWarpVolume : MonoBehaviour
 {
 	[SerializeField]
 	private Sector _sector;
+	[Space]
 	[SerializeField]
-	private Color _fogColor;
+	[ColorUsage(false, true)]
+	private Color _fogColor = Color.gray;
 }

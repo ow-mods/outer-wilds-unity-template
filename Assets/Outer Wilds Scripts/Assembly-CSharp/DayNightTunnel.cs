@@ -15,5 +15,5 @@ public class DayNightTunnel : MonoBehaviour
 	[SerializeField]
 	private LightCodeInterpreter _lightCodeInterpreter;
 	[SerializeField]
-	private float _height;
+	private float _height = 40f;
 }

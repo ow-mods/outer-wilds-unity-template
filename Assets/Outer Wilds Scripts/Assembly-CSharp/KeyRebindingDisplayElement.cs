@@ -5,6 +5,7 @@ public class KeyRebindingDisplayElement : MonoBehaviour
 {
 	[SerializeField]
 	private Text _label;
+	[Space(10f)]
 	[SerializeField]
 	private GameObject _gamepadBindingImage1Obj;
 	[SerializeField]
@@ -13,6 +14,7 @@ public class KeyRebindingDisplayElement : MonoBehaviour
 	private Image _gamepadBindingImage1;
 	[SerializeField]
 	private Image _gamepadBindingImage2;
+	[Space(10f)]
 	[SerializeField]
 	private GameObject _keyboardMouseBindingBlockObj;
 	[SerializeField]

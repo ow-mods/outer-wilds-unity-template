@@ -6,5 +6,5 @@ public class PerSectorShadowCastingStateGroup : MonoBehaviour
 	[SerializeField]
 	private Sector _sector;
 	[SerializeField]
-	private ShadowCastingMode _shadowCastingMode;
+	private ShadowCastingMode _shadowCastingMode = ShadowCastingMode.On;
 }

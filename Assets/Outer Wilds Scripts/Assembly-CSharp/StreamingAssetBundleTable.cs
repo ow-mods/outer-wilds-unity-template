@@ -26,10 +26,11 @@ public struct StreamingAssetBundleTable
 		Texture = 2,
 	}
 
-	public StreamingAssetBundleTable(StreamingAssetBundleTable.Entry[] assetBundles) : this()
-	{
-	}
-
 	[SerializeField]
 	public Entry[] assetBundles;
+
+	public StreamingAssetBundleTable(Entry[] assetBundles)
+	{
+		this.assetBundles = assetBundles;
+	}
 }

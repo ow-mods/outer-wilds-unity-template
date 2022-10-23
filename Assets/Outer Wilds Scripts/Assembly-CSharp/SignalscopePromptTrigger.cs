@@ -6,8 +6,9 @@ public class SignalscopePromptTrigger : MonoBehaviour
 	private bool _showPromptOnEnter;
 	[SerializeField]
 	private CharacterDialogueTree _dialogue;
+	[Space]
 	[SerializeField]
 	private bool _switchFrequency;
 	[SerializeField]
-	private SignalFrequency _frequency;
+	private SignalFrequency _frequency = SignalFrequency.Traveler;
 }

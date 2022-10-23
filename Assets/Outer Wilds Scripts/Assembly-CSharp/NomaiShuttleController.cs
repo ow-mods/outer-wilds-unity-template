@@ -11,7 +11,7 @@ public class NomaiShuttleController : MonoBehaviour
 	[SerializeField]
 	private ShuttleID _id;
 	[SerializeField]
-	private float _retrievalLength;
+	private float _retrievalLength = 1f;
 	[SerializeField]
 	private NomaiInterfaceSlot _launchSlot;
 	[SerializeField]
@@ -42,4 +42,7 @@ public class NomaiShuttleController : MonoBehaviour
 	private GameObject _landingBeamRoot;
 	[SerializeField]
 	private GameObject _exteriorRendererObj;
+	[Space]
+	[SerializeField]
+	private OWCollider[] _exteriorLegColliders = new OWCollider[0];
 }

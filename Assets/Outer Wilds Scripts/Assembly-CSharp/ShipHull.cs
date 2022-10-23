@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(ShipModule))]
 public class ShipHull : MonoBehaviour
 {
 	public enum Section
@@ -13,7 +14,7 @@ public class ShipHull : MonoBehaviour
 	}
 
 	[SerializeField]
-	protected UITextType _hullName;
+	protected UITextType _hullName = UITextType.SatelliteNodeName;
 	[SerializeField]
 	protected Section _section;
 	[SerializeField]
@@ -23,5 +24,5 @@ public class ShipHull : MonoBehaviour
 	[SerializeField]
 	protected DamageEffect _damageEffect;
 	[SerializeField]
-	protected float _repairTime;
+	protected float _repairTime = 5f;
 }

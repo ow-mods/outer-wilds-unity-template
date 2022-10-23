@@ -1,3 +1,3 @@
-public class ShapeUtil
+public static class ShapeUtil
 {
 }

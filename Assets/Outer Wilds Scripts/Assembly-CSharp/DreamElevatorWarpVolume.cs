@@ -9,5 +9,5 @@ public class DreamElevatorWarpVolume : MonoBehaviour
 	[SerializeField]
 	private CageElevator _trackedElevator;
 	[SerializeField]
-	private int _ID;
+	private int _ID = -1;
 }

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class RaftCarrier : MonoBehaviour
+public abstract class RaftCarrier : MonoBehaviour
 {
 	[SerializeField]
 	protected OWTriggerVolume _trigger;
@@ -13,9 +13,9 @@ public class RaftCarrier : MonoBehaviour
 	[SerializeField]
 	protected float _hookStartLocalY;
 	[SerializeField]
-	protected float _raftAlignSpeed;
+	protected float _raftAlignSpeed = 4f;
 	[SerializeField]
-	protected float _liftingDelay;
+	protected float _liftingDelay = 0.25f;
 	[SerializeField]
 	protected Vector2 _chainTilingModifier;
 	[SerializeField]

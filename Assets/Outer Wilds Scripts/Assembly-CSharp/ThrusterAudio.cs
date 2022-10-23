@@ -6,6 +6,7 @@ public class ThrusterAudio : MonoBehaviour
 	protected OWAudioSource _translationalSource;
 	[SerializeField]
 	private OWAudioSource _rotationalSource;
+	[Space]
 	[SerializeField]
 	protected AudioType _rotationClip;
 	[SerializeField]

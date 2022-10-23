@@ -4,14 +4,15 @@ public class RiverPathAudioSource : MonoBehaviour
 {
 	[SerializeField]
 	private OWAudioSource[] _audioPool;
+	[Space]
 	[SerializeField]
-	private float _muffledVolume;
+	private float _muffledVolume = 0.2f;
 	[SerializeField]
-	private float _crossfadeInDuration;
+	private float _crossfadeInDuration = 2f;
 	[SerializeField]
-	private float _crossfadeOutDuration;
+	private float _crossfadeOutDuration = 3f;
 	[SerializeField]
-	private float _crossfadeThreshold;
+	private float _crossfadeThreshold = 10f;
 	[SerializeField]
-	private float _minShoreFollowSpeed;
+	private float _minShoreFollowSpeed = 10f;
 }

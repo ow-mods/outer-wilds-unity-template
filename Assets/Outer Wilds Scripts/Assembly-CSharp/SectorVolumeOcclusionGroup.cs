@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[AddComponentMenu("Sectors/Sector Volume Occlusion Group", 200)]
 public class SectorVolumeOcclusionGroup : VolumeOcclusionGroup
 {
 	[SerializeField]

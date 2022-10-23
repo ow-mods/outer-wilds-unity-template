@@ -1,5 +1,7 @@
 using UnityEngine;
 
+[RequireComponent(typeof(OWTriggerVolume))]
+[RequireComponent(typeof(SphereShape))]
 public class ExplosiveGasVolume : MonoBehaviour
 {
 	[SerializeField]

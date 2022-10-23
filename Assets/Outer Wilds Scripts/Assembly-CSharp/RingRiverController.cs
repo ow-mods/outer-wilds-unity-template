@@ -4,8 +4,10 @@ public class RingRiverController : MonoBehaviour
 {
 	[SerializeField]
 	private bool _debugToggleFlood;
+	[HideInInspector]
 	[SerializeField]
 	private float _debugFloodLerp;
+	[Space]
 	[SerializeField]
 	private TessellatedRingRenderer _river;
 	[SerializeField]

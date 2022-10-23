@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[AddComponentMenu("Sectors/Sector Renderer LOD Group", 400)]
 public class SectorRendererLODGroup : CullGroup
 {
 	[SerializeField]

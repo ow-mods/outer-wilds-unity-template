@@ -7,6 +7,7 @@ public class AnimationEventEffect : SectoredMonoBehaviour
 	public struct PrefabTransform
 	{
 		public GameObject prefab;
+		[Tooltip("target position/rotation to spawn prefab on, if null will use current gameObject's position/rotation")]
 		public Transform targetTransform;
 	}
 
@@ -16,6 +17,7 @@ public class AnimationEventEffect : SectoredMonoBehaviour
 		[SerializeField]
 		public AnimationEventEffect.PrefabTransform[] prefabs;
 		public ParticleSystem[] ParticleSystems;
+		[Space]
 		public OWAudioSource audioSource;
 		public float audioDelay;
 	}

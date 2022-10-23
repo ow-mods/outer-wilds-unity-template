@@ -7,12 +7,13 @@ public class CreditsManager : MonoBehaviour
 	private bool _finalCredits;
 	[SerializeField]
 	private AnimationCurve _fadeCurve;
+	[Space]
 	[SerializeField]
 	private AnimationCurve _fadeFromWhiteCurve;
 	[SerializeField]
 	private Image _fadeImage;
 	[SerializeField]
-	private float _fadeLength;
+	private float _fadeLength = 0.5f;
 	[SerializeField]
 	private OWAudioSource _audioSource;
 	[SerializeField]

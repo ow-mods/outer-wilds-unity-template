@@ -14,4 +14,6 @@ public class ShipLogEntryDescriptionField : MonoBehaviour
 	private GameObject _scrollPromptRoot;
 	[SerializeField]
 	private FontAndLanguageController _fontAndLanguageController;
+	[SerializeField]
+	private ShipLogSlideProjector _slideProjector;
 }

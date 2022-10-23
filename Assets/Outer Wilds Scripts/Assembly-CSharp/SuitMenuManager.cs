@@ -4,6 +4,7 @@ public class SuitMenuManager : MonoBehaviour
 {
 	[SerializeField]
 	private Menu _mainMenu;
+	[Space(10f)]
 	[SerializeField]
 	private SubmitAction _resetSettingsAction;
 	[SerializeField]

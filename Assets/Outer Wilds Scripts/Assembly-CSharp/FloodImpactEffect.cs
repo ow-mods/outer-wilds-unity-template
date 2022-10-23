@@ -10,6 +10,7 @@ public class FloodImpactEffect : MonoBehaviour
 	private OWAudioSource _audioSource;
 	[SerializeField]
 	private ParticleSystem _particleSystem;
+	[Space]
 	[SerializeField]
 	private AudioType _audioType;
 	[SerializeField]

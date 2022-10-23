@@ -7,5 +7,6 @@ public class HelmetUVRenderer : MonoBehaviour
 	[SerializeField]
 	private Renderer[] _renderers;
 	[SerializeField]
-	private float _removeHelmetDelay;
+	private float _removeHelmetDelay = 1f;
+
 }

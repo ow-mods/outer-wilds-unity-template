@@ -1,16 +1,18 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(Animator))]
 public class PostCreditsManager : MonoBehaviour
 {
 	[SerializeField]
 	private OWCamera _camera;
 	[SerializeField]
-	private float _fadeInTime;
+	private float _fadeInTime = 1f;
 	[SerializeField]
-	private float _fadeOutTime;
+	private float _fadeOutTime = 1f;
+	[Space]
 	[SerializeField]
-	private GameObject[] _solanumObjects;
+	private GameObject[] _solanumObjects = new GameObject[0];
 	[SerializeField]
 	private OWAudioSource _campfireAudio;
 	[SerializeField]
@@ -24,23 +26,25 @@ public class PostCreditsManager : MonoBehaviour
 	[SerializeField]
 	private Renderer _campfireSmokeRenderer;
 	[SerializeField]
-	private Image[] _campfireLitImages;
+	private Image[] _campfireLitImages = new Image[0];
+	[Space]
 	[SerializeField]
-	private GameObject[] _prisonerObjects;
+	private GameObject[] _prisonerObjects = new GameObject[0];
 	[SerializeField]
 	private OWAudioSource _ruinsOneShot;
 	[SerializeField]
-	private AnimationCurve _ruinsLightCurve;
+	private AnimationCurve _ruinsLightCurve = AnimationCurve.Linear(0f, 0f, 1f, 1f);
 	[SerializeField]
-	private Image[] _ruinsLitImages;
+	private Image[] _ruinsLitImages = new Image[0];
 	[SerializeField]
 	private OWAudioSource _lanternOneShot;
 	[SerializeField]
-	private AnimationCurve _lanternLightCurve;
+	private AnimationCurve _lanternLightCurve = AnimationCurve.Linear(0f, 0f, 1f, 1f);
 	[SerializeField]
-	private Image[] _lanternLitImages;
+	private Image[] _lanternLitImages = new Image[0];
+	[Space]
 	[SerializeField]
-	private GameObject[] _probeObjects;
+	private GameObject[] _probeObjects = new GameObject[0];
 	[SerializeField]
 	private Animator _probeAnimator;
 	[SerializeField]

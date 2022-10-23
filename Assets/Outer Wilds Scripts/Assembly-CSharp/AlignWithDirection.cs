@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(OWRigidbody))]
 public class AlignWithDirection : MonoBehaviour
 {
 	private enum InterpolationMode
@@ -11,11 +12,11 @@ public class AlignWithDirection : MonoBehaviour
 	}
 
 	[SerializeField]
-	protected Vector3 _localAlignmentAxis;
+	protected Vector3 _localAlignmentAxis = new Vector3(0f, -1f, 0f);
 	[SerializeField]
 	private InterpolationMode _interpolationMode;
 	[SerializeField]
-	private float _interpolationRate;
+	private float _interpolationRate = 100f;
 	[SerializeField]
 	private bool _usePhysicsToRotate;
 }

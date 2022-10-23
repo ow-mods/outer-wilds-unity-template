@@ -10,6 +10,7 @@ public class EyeShuttleController : MonoBehaviour
 	private EndlessTriggerVolume _endlessShuttleVolume;
 	[SerializeField]
 	private GameObject _blockExitObject;
+	[Space]
 	[SerializeField]
 	private ParticleSystem _starParticles;
 	[SerializeField]
@@ -22,6 +23,7 @@ public class EyeShuttleController : MonoBehaviour
 	private GameObject _maskObject;
 	[SerializeField]
 	private Transform _playerMaskSocket;
+	[Space]
 	[SerializeField]
 	private NomaiInterfaceSlot _launchSlot;
 	[SerializeField]
@@ -36,6 +38,7 @@ public class EyeShuttleController : MonoBehaviour
 	private OWTriggerVolume _beamResetVolume;
 	[SerializeField]
 	private TractorBeamController _tractorBeam;
+	[Space]
 	[SerializeField]
 	private OWAudioSource _musicSource;
 	[SerializeField]

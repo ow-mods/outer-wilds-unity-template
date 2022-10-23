@@ -27,10 +27,11 @@ public class DialogueBoxVer2 : MonoBehaviour
 	private float _backgroundImageTopBottomMargin;
 	[SerializeField]
 	private float _backgroundImageLeftRightMargin;
+	[Space(10f)]
 	[SerializeField]
 	private Font _defaultDialogueFont;
 	[SerializeField]
 	private Font _defaultDialogueFontDynamic;
 	[SerializeField]
-	private float _defaultFontSpacing;
+	private float _defaultFontSpacing = 0.7f;
 }

@@ -5,5 +5,5 @@ public class RingworldShadowsOverride : MonoBehaviour
 	[SerializeField]
 	private Sector _sector;
 	[SerializeField]
-	private float _overrideShadowDistance;
+	private float _overrideShadowDistance = 50f;
 }

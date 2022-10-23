@@ -1,3 +1,3 @@
-public class TemperatureReadout
+public interface TemperatureReadout
 {
 }

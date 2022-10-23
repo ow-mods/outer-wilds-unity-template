@@ -16,5 +16,5 @@ public class RotationObject
 	public Vector3 closedRotation;
 	public Vector3 intervalRotation;
 	public float rotationStartTimeOffset;
-	public AnimationCurve rotationCurve;
+	public AnimationCurve rotationCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
 }

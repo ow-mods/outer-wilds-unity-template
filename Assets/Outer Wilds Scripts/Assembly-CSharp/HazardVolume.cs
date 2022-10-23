@@ -19,5 +19,5 @@ public class HazardVolume : EffectVolume
 	[SerializeField]
 	protected InstantDamageType _firstContactDamageType;
 	[SerializeField]
-	protected float _damagePerSecond;
+	protected float _damagePerSecond = 10f;
 }

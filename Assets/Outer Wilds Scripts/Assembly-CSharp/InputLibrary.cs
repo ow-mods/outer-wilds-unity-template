@@ -1,3 +1,3 @@
-public class InputLibrary
+public static class InputLibrary
 {
 }

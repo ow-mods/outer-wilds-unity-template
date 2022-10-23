@@ -5,5 +5,5 @@ public class ShipLogFactSnapshotTrigger : MonoBehaviour
 	[SerializeField]
 	private string[] _factIDs;
 	[SerializeField]
-	private float _maxDistance;
+	private float _maxDistance = 200f;
 }

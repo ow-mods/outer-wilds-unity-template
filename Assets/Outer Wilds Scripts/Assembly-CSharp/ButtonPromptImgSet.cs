@@ -1,7 +1,9 @@
 public enum ButtonPromptImgSet
 {
 	DEFAULT = -1,
-	XBOX_ONE = 0,
-	DUALSHOCK_4 = 1,
-	SWITCH_PRO = 2,
+	XBOX_ONE,
+	DUALSHOCK_4,
+	SWITCH_PRO,
+	DUALSENSEPS5,
+	XBOX_SERIES
 }

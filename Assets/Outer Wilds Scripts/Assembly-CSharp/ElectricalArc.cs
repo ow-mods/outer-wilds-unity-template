@@ -2,6 +2,15 @@ using UnityEngine;
 
 public class ElectricalArc : MonoBehaviour
 {
+	public enum Preset
+	{
+		None,
+		Auto,
+		Small,
+		Medium,
+		Large
+	}
+
 	public enum Mode
 	{
 		Looping = 0,
@@ -16,38 +25,42 @@ public class ElectricalArc : MonoBehaviour
 		_3D = 3,
 	}
 
+	[Header("Targets")]
 	[SerializeField]
 	private Transform _startTransform;
 	[SerializeField]
-	private Vector3 _startLocalPosition;
+	private Vector3 _startLocalPosition = Vector3.zero;
 	[SerializeField]
 	private Transform _endTransform;
 	[SerializeField]
-	private Vector3 _endLocalPosition;
+	private Vector3 _endLocalPosition = Vector3.zero;
+	[Header("Line Parameters")]
 	[SerializeField]
 	private Material _material;
 	[SerializeField]
-	private int _resolution;
+	private int _resolution = 16;
 	[SerializeField]
-	private float _width;
+	private float _width = 0.1f;
+	[Header("Arc Parameters")]
 	[SerializeField]
 	private Mode _mode;
 	[SerializeField]
-	private float _frequency;
+	private float _frequency = 1f;
 	[SerializeField]
-	private float _intensity;
+	private float _intensity = 1f;
 	[SerializeField]
-	private float _speed;
+	private float _speed = 1f;
 	[SerializeField]
-	private float _scrollSpeed;
+	private float _scrollSpeed = 1f;
 	[SerializeField]
-	private float _jumpTime;
+	private float _jumpTime = 1f;
 	[SerializeField]
-	private Vector3 _jumpDirection;
+	private Vector3 _jumpDirection = Vector3.zero;
+	[Header("Noise Parameters")]
 	[SerializeField]
-	private Dimension _dimension;
+	private Dimension _dimension = Dimension._2D;
 	[SerializeField]
-	private Vector3 _dimensionScale;
+	private Vector3 _dimensionScale = Vector3.one;
 	[SerializeField]
-	private int _octaves;
+	private int _octaves = 1;
 }

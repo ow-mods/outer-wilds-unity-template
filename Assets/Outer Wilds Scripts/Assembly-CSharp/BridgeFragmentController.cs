@@ -4,10 +4,10 @@ public class BridgeFragmentController : MonoBehaviour
 {
 	[SerializeField]
 	private Sector _sector;
+	[Space]
 	[SerializeField]
 	private Transform _snapTarget;
-	[SerializeField]
-	private bool _reattachAfterSettle;
+	[Space]
 	[SerializeField]
 	private Shape _detectorShape;
 }

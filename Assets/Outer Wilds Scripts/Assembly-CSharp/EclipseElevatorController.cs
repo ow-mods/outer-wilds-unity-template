@@ -6,10 +6,12 @@ public class EclipseElevatorController : AbstractGhostElevatorInterface
 	private SingleLightSensor[] _lightSensors;
 	[SerializeField]
 	private Transform[] _rotatingElements;
+	[Space]
 	[SerializeField]
-	private float _rotationSpeed;
+	private float _rotationSpeed = 180f;
 	[SerializeField]
-	private float _anglePrecision;
+	private float _anglePrecision = 10f;
+	[Header("Audio")]
 	[SerializeField]
 	private AudioLoopCrossfader _lightSensorCrossfader;
 	[SerializeField]

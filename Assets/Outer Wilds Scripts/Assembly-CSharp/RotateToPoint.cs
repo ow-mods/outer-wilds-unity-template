@@ -1,9 +1,9 @@
 using UnityEngine;
 
-public class RotateToPoint : MonoBehaviour
+public abstract class RotateToPoint : MonoBehaviour
 {
 	[SerializeField]
-	private float _timeToMaxSpeed;
+	private float _timeToMaxSpeed = 1f;
 	[SerializeField]
 	private float _targetLockAngle;
 	[SerializeField]

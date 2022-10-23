@@ -1,5 +1,5 @@
 using UnityEngine;
 
-public class AbstractGhostDoorInterface : MonoBehaviour
+public abstract class AbstractGhostDoorInterface : MonoBehaviour
 {
 }

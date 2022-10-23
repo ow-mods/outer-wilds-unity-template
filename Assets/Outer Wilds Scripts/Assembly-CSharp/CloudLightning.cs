@@ -1,6 +1,7 @@
 using UnityEngine;
 using System;
 
+[RequireComponent(typeof(Light))]
 public class CloudLightning : MonoBehaviour
 {
 	[Serializable]
@@ -11,11 +12,11 @@ public class CloudLightning : MonoBehaviour
 	}
 
 	[SerializeField]
-	private float _lightLength;
+	private float _lightLength = 1f;
 	[SerializeField]
-	private float _lightRadius;
+	private float _lightRadius = 100f;
 	[SerializeField]
-	private float _lightIntensity;
+	private float _lightIntensity = 5f;
 	[SerializeField]
 	private AnimSettings _lightAnimSettings;
 }

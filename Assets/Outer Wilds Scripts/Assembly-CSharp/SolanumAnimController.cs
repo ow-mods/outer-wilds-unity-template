@@ -1,9 +1,10 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Animator))]
 public class SolanumAnimController : MonoBehaviour
 {
 	[SerializeField]
-	private DampedSpringQuat _lookSpring;
+	private DampedSpringQuat _lookSpring = new DampedSpringQuat();
 	[SerializeField]
 	private GameObject _staffLocked;
 	[SerializeField]

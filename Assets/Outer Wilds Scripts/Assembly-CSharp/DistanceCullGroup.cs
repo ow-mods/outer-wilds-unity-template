@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(CullDistanceTracker))]
 public class DistanceCullGroup : CullGroup
 {
 	[SerializeField]

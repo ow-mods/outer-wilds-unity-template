@@ -7,5 +7,5 @@ public class IslandDroppingCode : MonoBehaviour
 	[SerializeField]
 	private GameObject _islandVisuals;
 	[SerializeField]
-	private int _downSpeed;
+	private int _downSpeed = 10;
 }

@@ -15,5 +15,5 @@ public class DarkZone : MonoBehaviour
 	[SerializeField]
 	private OWRenderer _exitFogPlane;
 	[SerializeField]
-	private float _transitionTime;
+	private float _transitionTime = 5f;
 }

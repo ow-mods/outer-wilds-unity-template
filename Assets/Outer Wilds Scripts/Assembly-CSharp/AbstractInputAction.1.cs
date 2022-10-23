@@ -1,3 +1,3 @@
-public class AbstractInputAction<T> : AbstractInputAction
+public abstract class AbstractInputAction<T> : AbstractInputAction
 {
 }

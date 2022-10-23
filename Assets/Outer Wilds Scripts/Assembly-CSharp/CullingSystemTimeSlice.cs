@@ -11,6 +11,7 @@ public class CullingSystemTimeSlice : MonoBehaviour
 	public bool DEBUG;
 	public int _FrameSlice;
 	[SerializeField]
+	[Range(-1f, 1f)]
 	private float DOT;
 	[SerializeField]
 	private MeshRenderer[] _MeshRenderers;
@@ -18,4 +19,11 @@ public class CullingSystemTimeSlice : MonoBehaviour
 	private Transform[] _Transforms;
 	[SerializeField]
 	private Vector3[] _RenderCenters;
+
+	private void OnDrawGizmosSelected()
+	{
+		if (_CullingCenter == null) return;
+		Gizmos.color = new Color(1f, 1f, 0f, 0.75f);
+		Gizmos.DrawSphere(_CullingCenter.transform.position, _InteriorRadius);
+	}
 }

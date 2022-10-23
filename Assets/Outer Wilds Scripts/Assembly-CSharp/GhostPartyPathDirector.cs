@@ -8,6 +8,8 @@ public class GhostPartyPathDirector : GhostDirector
 	{
 		public Transform spawnTransform;
 		public AbstractDoor spawnDoor;
+		[NonSerialized]
+		public float spawnDoorTimer;
 	}
 
 	[Serializable]
@@ -17,16 +19,17 @@ public class GhostPartyPathDirector : GhostDirector
 		public ProxyGhostController proxyGhost;
 	}
 
+	[Space]
 	[SerializeField]
-	private GhostSpawnLocation[] _ghostSpawns;
+	private GhostSpawnLocation[] _ghostSpawns = new GhostSpawnLocation[0];
 	[SerializeField]
-	private float _minGhostDispatchDelay;
+	private float _minGhostDispatchDelay = 10f;
 	[SerializeField]
-	private float _maxGhostDispatchDelay;
+	private float _maxGhostDispatchDelay = 90f;
 	[SerializeField]
-	private GhostFinalDestination[] _ghostFinalDestinations;
+	private GhostFinalDestination[] _ghostFinalDestinations = new GhostFinalDestination[0];
 	[SerializeField]
-	private Transform[] _ghostOverflowFinalDestinations;
+	private Transform[] _ghostOverflowFinalDestinations = new Transform[0];
 	[SerializeField]
 	private OWTriggerVolume _respawnBlockTrigger;
 }

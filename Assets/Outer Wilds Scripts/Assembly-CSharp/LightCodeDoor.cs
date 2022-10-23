@@ -10,6 +10,7 @@ public class LightCodeDoor : MonoBehaviour
 	private bool _startsOpen;
 	[SerializeField]
 	private OWAudioSource _oneShotSource;
+	[Space]
 	[SerializeField]
 	private float _speed;
 }

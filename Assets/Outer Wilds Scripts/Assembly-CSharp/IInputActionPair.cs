@@ -1,3 +1,3 @@
-public class IInputActionPair
+public interface IInputActionPair
 {
 }

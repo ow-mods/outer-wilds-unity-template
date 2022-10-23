@@ -3,7 +3,13 @@ using UnityEngine;
 public class Achievement_OneNineHundred : MonoBehaviour
 {
 	[SerializeField]
-	private float _maxViewDistance;
+	private DreamCandle _candle;
 	[SerializeField]
-	private float _maxViewAngle;
+	private ParticleSystem[] _particles;
+	[SerializeField]
+	private GameObject[] _candleObjects;
+	[SerializeField]
+	private GameObject _korokObject;
+	[SerializeField]
+	private OWAudioSource _musicSource;
 }

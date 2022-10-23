@@ -1,3 +1,3 @@
-public class ILateInitializer
+public interface ILateInitializer
 {
 }

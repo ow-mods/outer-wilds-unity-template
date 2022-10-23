@@ -1,3 +1,3 @@
-public class ICameraViewInteractable
+public interface ICameraViewInteractable
 {
 }

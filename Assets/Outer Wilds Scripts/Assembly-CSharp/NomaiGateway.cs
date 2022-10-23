@@ -5,9 +5,9 @@ public class NomaiGateway : SectoredMonoBehaviour
 	[SerializeField]
 	private bool _startOpen;
 	[SerializeField]
-	private bool _openFromBothEnds;
+	private bool _openFromBothEnds = true;
 	[SerializeField]
-	private float _slabInterval;
+	private float _slabInterval = 2f;
 	[SerializeField]
 	private NomaiInterfaceSlot _openSlot;
 	[SerializeField]

@@ -1,3 +1,3 @@
-public class IVectorInputAction
+public interface IVectorInputAction
 {
 }

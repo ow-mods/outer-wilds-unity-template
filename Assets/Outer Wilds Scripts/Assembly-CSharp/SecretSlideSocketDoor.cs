@@ -10,8 +10,9 @@ public class SecretSlideSocketDoor : MonoBehaviour
 	private AbstractDoor _mainDoor;
 	[SerializeField]
 	private OWLightController _lightController;
+	[Space]
 	[SerializeField]
-	private float _lightFadeLength;
+	private float _lightFadeLength = 1f;
 	[SerializeField]
-	private float _doorOpenDelay;
+	private float _doorOpenDelay = 1f;
 }

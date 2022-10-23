@@ -7,5 +7,5 @@ public class GravityCrystalAudioController : MonoBehaviour
 	[SerializeField]
 	private bool _rolloffOverDistance;
 	[SerializeField]
-	private float _minLocalVolume;
+	private float _minLocalVolume = 0.2f;
 }

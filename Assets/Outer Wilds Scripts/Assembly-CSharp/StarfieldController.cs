@@ -21,12 +21,15 @@ public class StarfieldController : MonoBehaviour
 	private Renderer _starfieldRenderer;
 	[SerializeField]
 	private GameObject _supernovaPrefab;
+	[Space]
 	[SerializeField]
 	private GameObject _eyeSupernovaPrefab;
 	[SerializeField]
 	private Transform _eyeSupernovaSpawnPos;
+	[Space]
 	[SerializeField]
 	private Renderer _dreamStarfieldRenderer;
 	[SerializeField]
+	[HideInInspector]
 	private StarLookup[] _orderedStarIndices;
 }

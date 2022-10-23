@@ -7,43 +7,48 @@ public class PlayerCharacterController : MonoBehaviour
 	[SerializeField]
 	private Collider _antiSinkingCollider;
 	[SerializeField]
-	private float _runSpeed;
+	private float _runSpeed = 6f;
 	[SerializeField]
-	private float _walkSpeed;
+	private float _walkSpeed = 3f;
 	[SerializeField]
-	private float _strafeSpeed;
+	private float _strafeSpeed = 4f;
 	[SerializeField]
-	private float _acceleration;
+	private float _acceleration = 0.5f;
 	[SerializeField]
-	private float _airSpeed;
+	private float _airSpeed = 3f;
 	[SerializeField]
-	private float _airAcceleration;
+	private float _airAcceleration = 0.2f;
 	[SerializeField]
-	private float _minJumpSpeed;
+	private float _minJumpSpeed = 3f;
 	[SerializeField]
-	private float _maxJumpSpeed;
+	private float _maxJumpSpeed = 6f;
+	[Space]
 	[SerializeField]
-	private bool _useChargeJump;
+	private bool _useChargeJump = true;
 	[SerializeField]
 	private bool _useChargeCurve;
 	[SerializeField]
 	private AnimationCurve _jumpChargeCurve;
+	[Space]
 	[SerializeField]
-	private float _minStaggerDamage;
+	private float _minStaggerDamage = 5f;
 	[SerializeField]
-	private float _minStaggerLength;
+	private float _minStaggerLength = 1f;
 	[SerializeField]
-	private float _maxStaggerLength;
+	private float _maxStaggerLength = 3f;
+	[Space]
 	[SerializeField]
-	private float _tumbleThreshold;
+	private float _tumbleThreshold = float.PositiveInfinity;
 	[SerializeField]
-	private float _tumbleDuration;
+	private float _tumbleDuration = 1.5f;
+	[Space]
 	[SerializeField]
-	private int _maxAngleToBeGrounded;
+	private int _maxAngleToBeGrounded = 45;
 	[SerializeField]
-	private int _maxAngleBetweenSlopes;
+	private int _maxAngleBetweenSlopes = 115;
+	[Space]
 	[SerializeField]
-	private bool _groundSnappingEnabled;
+	private bool _groundSnappingEnabled = true;
 	[SerializeField]
-	private float _jumpDurationAfterUngrounded;
+	private float _jumpDurationAfterUngrounded = 0.25f;
 }

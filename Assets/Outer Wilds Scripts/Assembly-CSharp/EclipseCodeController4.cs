@@ -14,10 +14,12 @@ public class EclipseCodeController4 : AbstractGhostDoorInterface
 	private Transform _lockOnTransform;
 	[SerializeField]
 	private Transform[] _selectors;
+	[Space]
 	[SerializeField]
 	private int[] _code;
 	[SerializeField]
-	private string[] _factIDs;
+	private string[] _factIDs = new string[0];
+	[Space]
 	[SerializeField]
 	private OWAudioSource _oneShotAudio;
 }

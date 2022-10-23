@@ -1,3 +1,3 @@
-public class AbstractCommands
+public abstract class AbstractCommands
 {
 }

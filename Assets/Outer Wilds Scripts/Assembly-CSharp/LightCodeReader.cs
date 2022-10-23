@@ -9,6 +9,7 @@ public class LightCodeReader : MonoBehaviour
 	private bool _reverses;
 	[SerializeField]
 	private float _pauseDuration;
+	[Space]
 	[SerializeField]
 	private GameObject _lightsRoot;
 	[SerializeField]

@@ -3,7 +3,8 @@ using UnityEngine;
 public class DreamTorch : MonoBehaviour
 {
 	[SerializeField]
-	private bool _startLit;
+	private bool _startLit = true;
+	[Space]
 	[SerializeField]
 	private LightSensor _lightSensor;
 	[SerializeField]

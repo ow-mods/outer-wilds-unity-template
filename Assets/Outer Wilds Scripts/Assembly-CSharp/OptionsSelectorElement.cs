@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(Selectable))]
 public class OptionsSelectorElement : MenuValueOption
 {
 	protected enum Direction
@@ -21,6 +22,7 @@ public class OptionsSelectorElement : MenuValueOption
 	protected Text _displayText;
 	[SerializeField]
 	protected UIStyleApplier _optionsBoxStyleApplier;
+	[Header("Arrow Selectables")]
 	[SerializeField]
 	protected Selectable _selectOnUp;
 	[SerializeField]

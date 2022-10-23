@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[AddComponentMenu("Streaming/Dream Campfire Streaming", 200)]
 public class DreamCampfireStreaming : SectoredMonoBehaviour
 {
 	[SerializeField]

@@ -6,6 +6,7 @@ public class ProbeLauncherEffects : MonoBehaviour
 	protected ParticleSystem _launchParticles;
 	[SerializeField]
 	protected ParticleSystem _underwaterLaunchParticles;
+	[Space]
 	[SerializeField]
 	protected OWAudioSource _owAudioSource;
 }

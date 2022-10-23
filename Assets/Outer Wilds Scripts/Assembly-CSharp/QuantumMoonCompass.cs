@@ -7,5 +7,5 @@ public class QuantumMoonCompass : MonoBehaviour
 	[SerializeField]
 	private Transform[] _stateSymbols;
 	[SerializeField]
-	private bool _loop;
+	private bool _loop = true;
 }

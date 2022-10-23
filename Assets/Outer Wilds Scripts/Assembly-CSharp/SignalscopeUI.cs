@@ -14,17 +14,17 @@ public class SignalscopeUI : MonoBehaviour
 	[SerializeField]
 	private Text _signalscopeLabel;
 	[SerializeField]
-	private float _amplitude;
+	private float _amplitude = 1f;
 	[SerializeField]
-	private bool _showFrequencyLabel;
+	private bool _showFrequencyLabel = true;
 	[SerializeField]
 	private Text _distanceLabel;
 	[SerializeField]
 	private RectTransform _signalZoomArrow;
 	[SerializeField]
-	private float _signalZoomArrowStartRot;
+	private float _signalZoomArrowStartRot = 135f;
 	[SerializeField]
-	private float _signalZoomArrowEndRot;
+	private float _signalZoomArrowEndRot = 45f;
 	[SerializeField]
 	private bool _isPlayerScope;
 	[SerializeField]

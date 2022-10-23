@@ -1,3 +1,3 @@
-public class SettingsUiUtil
+public static class SettingsUiUtil
 {
 }

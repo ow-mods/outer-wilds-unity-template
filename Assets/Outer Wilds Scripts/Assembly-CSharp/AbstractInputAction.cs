@@ -1,3 +1,3 @@
-public class AbstractInputAction
+public abstract class AbstractInputAction
 {
 }

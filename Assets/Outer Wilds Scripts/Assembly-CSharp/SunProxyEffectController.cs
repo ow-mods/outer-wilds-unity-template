@@ -15,9 +15,9 @@ public class SunProxyEffectController : MonoBehaviour
 	[SerializeField]
 	private SupernovaEffectController _proxySupernova;
 	[SerializeField]
-	protected float _rayleighCurveMinDistance;
+	protected float _rayleighCurveMinDistance = 45000f;
 	[SerializeField]
-	protected float _rayleighCurveMaxDistance;
+	protected float _rayleighCurveMaxDistance = 1250000f;
 	[SerializeField]
 	protected float _rayleighCurveMinVal;
 	[SerializeField]

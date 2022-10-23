@@ -10,6 +10,7 @@ public class EyeVortexTrigger : MonoBehaviour
 	private OWAudioSource _oneShotSource;
 	[SerializeField]
 	private GameObject _tunnelObject;
+	[Space]
 	[SerializeField]
 	private OWTriggerVolume _vortexTrigger;
 	[SerializeField]

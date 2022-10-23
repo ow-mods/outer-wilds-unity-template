@@ -7,7 +7,7 @@ public class DayNightAudioVolume : AudioVolume
 	[SerializeField]
 	private AudioType _nightLibraryClip;
 	[SerializeField]
-	private float _dayWindow;
+	private float _dayWindow = 180f;
 	[SerializeField]
 	private OWAudioSource _daySource;
 	[SerializeField]

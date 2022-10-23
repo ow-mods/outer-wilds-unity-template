@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(OWAudioSource))]
 public class SunSurfaceAudioController : SectoredMonoBehaviour
 {
 	[SerializeField]

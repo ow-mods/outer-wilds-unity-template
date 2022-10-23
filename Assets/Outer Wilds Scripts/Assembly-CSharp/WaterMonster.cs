@@ -12,8 +12,10 @@ public class WaterMonster : MonoBehaviour
 	private float _maxBloodlust;
 	[SerializeField]
 	private float _bloodlustCooldown;
+	[Space]
 	[SerializeField]
 	private bool _doesProbeTrigger;
+	[Space]
 	[SerializeField]
 	private SwampFluidVolume _swampVolume;
 	[SerializeField]

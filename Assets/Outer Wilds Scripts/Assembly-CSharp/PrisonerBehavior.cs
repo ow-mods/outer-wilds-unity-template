@@ -1,0 +1,19 @@
+public enum PrisonerBehavior
+{
+	None,
+	Lurking,
+	Emerge,
+	WaitForConversation,
+	LightLamp,
+	FetchTorch,
+	ProjectVision,
+	OfferTorch,
+	WaitForProjection,
+	ExperienceVision,
+	ExperienceEmotionalCatharsis,
+	MoveToElevatorDoor,
+	WaitForTorchReturn,
+	Farewell,
+	RideElevator,
+	Exit
+}

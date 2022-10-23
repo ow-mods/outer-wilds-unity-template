@@ -1,3 +1,3 @@
-public class ISectorGroup
+public interface ISectorGroup
 {
 }

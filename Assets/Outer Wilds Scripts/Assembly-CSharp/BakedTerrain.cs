@@ -1,6 +1,7 @@
 using UnityEngine;
 using TerrainBaker;
 
+[SelectionBase]
 public class BakedTerrain : MonoBehaviour
 {
 	[SerializeField]
@@ -14,5 +15,5 @@ public class BakedTerrain : MonoBehaviour
 	[SerializeField]
 	private Settings _settings;
 	[SerializeField]
-	private string _exportPath;
+	private string _exportPath = "Assets/Models/BakedTerrain.asset";
 }

@@ -11,5 +11,5 @@ public class NomaiAirlockEffectController : MonoBehaviour
 	[SerializeField]
 	private FluidVolume _pouringFluid;
 	[SerializeField]
-	private float _fluidPourDuration;
+	private float _fluidPourDuration = 3f;
 }

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class MenuOption : MonoBehaviour
@@ -11,8 +12,10 @@ public class MenuOption : MonoBehaviour
 	protected Text _secondaryTextField;
 	[SerializeField]
 	protected UITextType _tooltipTextType;
+	[FormerlySerializedAs("_testText")]
 	[SerializeField]
 	protected string _overrideTooltipText;
+	[Space(10f)]
 	[SerializeField]
 	private bool _enableXbox;
 	[SerializeField]
@@ -23,4 +26,6 @@ public class MenuOption : MonoBehaviour
 	private bool _enableInGame;
 	[SerializeField]
 	private bool _dlcOnly;
+	[SerializeField]
+	private UITextType _overrideLabelTextPS5Only;
 }

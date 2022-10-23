@@ -2,12 +2,15 @@ using UnityEngine;
 
 public class EyeMirrorController : MonoBehaviour
 {
+	[Header("Hide In Tomb")]
 	[SerializeField]
 	private OWLight2 _planetFillLight;
+	[Header("Portraits")]
 	[SerializeField]
 	private AbstractDoor _door;
 	[SerializeField]
 	private EyeTombPortrait[] _portraits;
+	[Header("Volumes")]
 	[SerializeField]
 	private OWTriggerVolume _tombVolume;
 	[SerializeField]
@@ -16,10 +19,12 @@ public class EyeMirrorController : MonoBehaviour
 	private EndlessCylinder _forestCylinder;
 	[SerializeField]
 	private OWTriggerVolume _closeDoorTrigger;
+	[Header("Signals")]
 	[SerializeField]
 	private AudioSignal _buriedSignal;
 	[SerializeField]
 	private AudioSignal _instrumentSignal;
+	[Header("Mirror")]
 	[SerializeField]
 	private DreamCandle _dreamCandle;
 	[SerializeField]
@@ -34,10 +39,12 @@ public class EyeMirrorController : MonoBehaviour
 	private Transform _mirrorProbeScaleRoot;
 	[SerializeField]
 	private Transform _mirrorProbeCenterBone;
+	[Header("Mummy")]
 	[SerializeField]
 	private GameObject _mummyObject;
 	[SerializeField]
 	private GameObject _tunnelBlocker;
+	[Header("Instrument")]
 	[SerializeField]
 	private VisibilityObject _instrumentVisibilityObject;
 	[SerializeField]

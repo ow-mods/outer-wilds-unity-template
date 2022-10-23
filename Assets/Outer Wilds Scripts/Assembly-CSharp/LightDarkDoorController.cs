@@ -6,6 +6,7 @@ public class LightDarkDoorController : MonoBehaviour
 	private bool _openInDarkness;
 	[SerializeField]
 	private bool _stayOpen;
+	[Space]
 	[SerializeField]
 	private SlidingDoor _door;
 	[SerializeField]

@@ -8,22 +8,26 @@ public class SolarFlareEmitter : MonoBehaviour
 	private GameObject _loopPrefab;
 	[SerializeField]
 	private GameObject _domePrefab;
+	[Space]
 	[SerializeField]
-	private float _lifeLength;
+	private float _lifeLength = 15f;
 	[SerializeField]
-	private Color _tint;
+	private Color _tint = Color.white;
+	[Space]
 	[SerializeField]
-	private float _minTimeBetweenFlares;
+	private float _minTimeBetweenFlares = 5f;
 	[SerializeField]
-	private float _maxTimeBetweenFlares;
+	private float _maxTimeBetweenFlares = 30f;
 	[SerializeField]
-	private AnimationCurve _flareFrequencyTimeloopScale;
+	private AnimationCurve _flareFrequencyTimeloopScale = AnimationCurve.EaseInOut(0f, 1f, 20f, 5f);
+	[Space]
 	[SerializeField]
-	private int _minStreamersPerFlare;
+	private int _minStreamersPerFlare = 1;
 	[SerializeField]
-	private int _maxStreamersPerFlare;
+	private int _maxStreamersPerFlare = 3;
+	[Space]
 	[SerializeField]
-	private float _startScale;
+	private float _startScale = 0.01f;
 	[SerializeField]
-	private float _endScale;
+	private float _endScale = 0.1f;
 }

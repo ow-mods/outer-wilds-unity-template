@@ -1,5 +1,5 @@
 using UnityEngine;
 
-public class ShipLogMode : MonoBehaviour
+public abstract class ShipLogMode : MonoBehaviour
 {
 }

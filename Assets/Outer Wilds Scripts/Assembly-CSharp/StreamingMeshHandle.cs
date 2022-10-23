@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[AddComponentMenu("Streaming/Streaming Mesh Handle", 300)]
 public class StreamingMeshHandle : MonoBehaviour
 {
 	[SerializeField]

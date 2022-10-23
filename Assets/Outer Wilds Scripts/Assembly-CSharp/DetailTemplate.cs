@@ -5,5 +5,5 @@ using UnityEngine;
 public class DetailTemplate : ScriptableObject
 {
 	public DetailPalette detailPalette;
-	public DetailInstance[] detailInstances;
+	public DetailInstance[] detailInstances = new DetailInstance[0];
 }

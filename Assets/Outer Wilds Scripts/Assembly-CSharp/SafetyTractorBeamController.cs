@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(TractorBeamController))]
 public class SafetyTractorBeamController : SectoredMonoBehaviour
 {
 	[SerializeField]
@@ -9,5 +10,5 @@ public class SafetyTractorBeamController : SectoredMonoBehaviour
 	[SerializeField]
 	private int _materialIndex;
 	[SerializeField]
-	private float _fadeDuration;
+	private float _fadeDuration = 1f;
 }

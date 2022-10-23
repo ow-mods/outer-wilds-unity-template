@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(OWAudioSource))]
 public class PlayerDeathAudio : MonoBehaviour
 {
 	[SerializeField]

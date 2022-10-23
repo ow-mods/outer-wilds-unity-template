@@ -1,5 +1,5 @@
 using UnityEngine;
 
-public class CreditsSection : MonoBehaviour
+public abstract class CreditsSection : MonoBehaviour
 {
 }

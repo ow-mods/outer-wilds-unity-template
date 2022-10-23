@@ -10,17 +10,22 @@ public class GhostData
 		IntruderConfirmed = 30,
 	}
 
+	public GhostLocationData playerLocation = new GhostLocationData();
+	public GhostLocationData lastKnownPlayerLocation = new GhostLocationData();
+	public GhostSensorData sensor = new GhostSensorData();
+	public GhostSensorData lastKnownSensor = new GhostSensorData();
+	private GhostSensorData firstUnknownSensor = new GhostSensorData();
 	public ThreatAwareness threatAwareness;
-	public GhostAction.Name currentAction;
-	public GhostAction.Name previousAction;
-	public bool isAlive;
+	public GhostAction.Name currentAction = GhostAction.Name.None;
+	public GhostAction.Name previousAction = GhostAction.Name.None;
+	public bool isAlive = true;
 	public bool hasWokenUp;
 	public bool isPlayerLocationKnown;
 	public bool wasPlayerLocationKnown;
 	public bool reduceGuardUtility;
 	public bool fastStalkUnlocked;
 	public float timeLastSawPlayer;
-	public float timeSincePlayerLocationKnown;
+	public float timeSincePlayerLocationKnown = float.PositiveInfinity;
 	public float playerMinLanternRange;
 	public float illuminatedByPlayerMeter;
 	public bool hasChokePoint;

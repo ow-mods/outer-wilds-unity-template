@@ -8,6 +8,7 @@ public class ShipCockpitUI : MonoBehaviour
 	private ShipCockpitController _shipSystemsCtrlr;
 	[SerializeField]
 	private ShipNotificationDisplay _shipConsole;
+	[Header("Probe Launcher")]
 	[SerializeField]
 	private Transform _probeLauncherDisplay;
 	[SerializeField]
@@ -18,6 +19,7 @@ public class ShipCockpitUI : MonoBehaviour
 	private ShipLight _probeLauncherScreenLight;
 	[SerializeField]
 	private float _probeRotateTime;
+	[Header("Signalscope")]
 	[SerializeField]
 	private SignalscopeUI _signalscopeUI;
 	[SerializeField]
@@ -36,10 +38,12 @@ public class ShipCockpitUI : MonoBehaviour
 	private float _scopeRotateTime;
 	[SerializeField]
 	private MeshRenderer _scopeMeshRenderer;
+	[Header("Console Screen")]
 	[SerializeField]
-	private float _screenEmissionConsole;
+	private float _screenEmissionConsole = 0.5f;
 	[SerializeField]
 	private MeshRenderer _consoleScreenMeshRndr;
+	[Header("Damage Screen")]
 	[SerializeField]
 	private Light _damageLight;
 	[SerializeField]
@@ -48,6 +52,7 @@ public class ShipCockpitUI : MonoBehaviour
 	private MeshRenderer _damageLightMeshRndr;
 	[SerializeField]
 	private int _damageLightMatIndex;
+	[Header("Dashboard Lights")]
 	[SerializeField]
 	private Light _flashlightlightFLL;
 	[SerializeField]
@@ -60,10 +65,12 @@ public class ShipCockpitUI : MonoBehaviour
 	private Light _matchingVelocityLight;
 	[SerializeField]
 	private MeshRenderer _matchVMeshRndr;
+	[Header("Lock-On")]
 	[SerializeField]
 	private ReferenceFrameGUI _cockpitLockOnGui;
 	[SerializeField]
 	private float _lockOnGuiPlaneDistance;
+	[Header("Landing Cam Panel")]
 	[SerializeField]
 	private ShipLight _landingCamScreenLight;
 	[SerializeField]

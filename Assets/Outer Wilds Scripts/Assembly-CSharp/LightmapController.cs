@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Light))]
 public class LightmapController : MonoBehaviour
 {
 	public enum LightmapChannel
@@ -11,7 +12,7 @@ public class LightmapController : MonoBehaviour
 	}
 
 	[SerializeField]
-	private Material[] _materials;
+	private Material[] _materials = new Material[0];
 	[SerializeField]
 	private LightmapChannel _channel;
 }

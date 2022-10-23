@@ -3,6 +3,13 @@ using UnityEngine.UI;
 
 public class CreditsEntry : MonoBehaviour
 {
+	public enum Style
+	{
+		Content,
+		Header,
+		Title
+	}
+	
 	[SerializeField]
 	private Text[] _columns;
 	[SerializeField]

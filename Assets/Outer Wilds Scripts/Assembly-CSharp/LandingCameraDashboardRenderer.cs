@@ -10,7 +10,7 @@ public class LandingCameraDashboardRenderer : MonoBehaviour
 	}
 
 	[SerializeField]
-	private RenderTime _renderTime;
+	private RenderTime _renderTime = RenderTime.Mid;
 	[SerializeField]
-	private Material[] _materials;
+	private Material[] _materials = new Material[1];
 }

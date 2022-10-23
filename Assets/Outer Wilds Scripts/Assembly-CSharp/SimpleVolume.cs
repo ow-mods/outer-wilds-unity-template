@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SimpleVolume : MonoBehaviour
+public abstract class SimpleVolume : MonoBehaviour
 {
 	public enum Shape
 	{
@@ -12,9 +12,9 @@ public class SimpleVolume : MonoBehaviour
 	[SerializeField]
 	protected Shape _shape;
 	[SerializeField]
-	protected float _radius;
+	protected float _radius = 1f;
 	[SerializeField]
-	protected float _height;
+	protected float _height = 2f;
 	[SerializeField]
-	protected Vector3 _size;
+	protected Vector3 _size = Vector3.one;
 }

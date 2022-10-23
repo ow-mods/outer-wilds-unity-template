@@ -1,3 +1,3 @@
-public class IStreamingTexturesSubscriber
+public interface IStreamingTexturesSubscriber
 {
 }

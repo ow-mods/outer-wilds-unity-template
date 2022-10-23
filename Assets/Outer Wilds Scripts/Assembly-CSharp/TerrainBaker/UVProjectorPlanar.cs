@@ -12,8 +12,8 @@ namespace TerrainBaker
 		}
 
 		[SerializeField]
-		protected Plane _plane;
+		protected Plane _plane = Plane.Z;
 		[SerializeField]
-		protected Vector2 _scale;
+		protected Vector2 _scale = Vector2.one;
 	}
 }

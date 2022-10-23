@@ -16,11 +16,11 @@ public class MapMarker : MonoBehaviour
 	}
 
 	[SerializeField]
-	private UITextType _labelID;
+	private UITextType _labelID = UITextType.MaxNumberOfUIText;
 	[SerializeField]
 	private MarkerType _markerType;
 	[SerializeField]
-	private Color _customMarkerColor;
+	private Color _customMarkerColor = Color.white;
 	[SerializeField]
 	private FogWarpDetector _fogWarpDetector;
 }

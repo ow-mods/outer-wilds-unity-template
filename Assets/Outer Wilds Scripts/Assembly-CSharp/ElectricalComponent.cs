@@ -1,5 +1,5 @@
 using UnityEngine;
 
-public class ElectricalComponent : MonoBehaviour
+public abstract class ElectricalComponent : MonoBehaviour
 {
 }

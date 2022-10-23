@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(OWCamera))]
 public class ProbeCamera : MonoBehaviour
 {
 	public enum ID

@@ -3,13 +3,14 @@ using UnityEngine;
 public class QuantumMoon : QuantumObject
 {
 	[SerializeField]
-	private float _fogRadius;
+	private float _fogRadius = 105f;
 	[SerializeField]
-	private float _fogThickness;
+	private float _fogThickness = 5f;
 	[SerializeField]
-	private float _fogRolloffDistance;
+	private float _fogRolloffDistance = 5f;
 	[SerializeField]
 	private float _eyeStateFogOffset;
+	[Space]
 	[SerializeField]
 	private GameObject[] _deactivateAtEye;
 	[SerializeField]
@@ -30,6 +31,7 @@ public class QuantumMoon : QuantumObject
 	private SphereShape _interiorVolumeShape;
 	[SerializeField]
 	private OWAudioSource _vortexAudio;
+	[Space]
 	[SerializeField]
 	private Transform _probeAnchorPoint;
 	[SerializeField]
@@ -43,11 +45,22 @@ public class QuantumMoon : QuantumObject
 	[SerializeField]
 	private GameObject[] _quantumShrineProxyRenderers;
 	[SerializeField]
-	private float _sphereCheckRadius;
+	private float _sphereCheckRadius = 500f;
 	[SerializeField]
 	private GameObject[] _states;
 	[SerializeField]
 	private QuantumDarkTrigger[] _darkTriggers;
 	[SerializeField]
 	private string _revealFactID;
+
+	private void OnDrawGizmosSelected()
+	{
+		Gizmos.color = Color.white;
+		Gizmos.DrawWireSphere(base.transform.position, _fogRadius);
+		Gizmos.color = Color.yellow;
+		Gizmos.DrawWireSphere(base.transform.position, _sphereCheckRadius);
+		Gizmos.color = new ColorHSV(277f, 1f, 1f).ToColorRGB();
+		OWGizmos.DrawWireCircle(base.transform.position, Vector3.up, _maxSnapshotLockRange);
+		OWGizmos.DrawBillboardedWireCircle(base.transform.position, _maxSnapshotLockRange);
+	}
 }

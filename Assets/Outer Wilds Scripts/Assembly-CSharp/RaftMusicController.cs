@@ -10,8 +10,9 @@ public class RaftMusicController : MonoBehaviour
 	private OWAudioSource _riverSource;
 	[SerializeField]
 	private OWAudioSource _calmSource;
+	[Space]
 	[SerializeField]
 	private OWTriggerVolume[] _muteVolumes;
 	[SerializeField]
-	private float _startReservoirDegrees;
+	private float _startReservoirDegrees = 300f;
 }

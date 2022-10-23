@@ -4,9 +4,9 @@ using UnityEngine;
 [Serializable]
 public class BuoyancyData
 {
-	public float density;
+	public float density = 1f;
 	public float boundingRadius;
-	public AnimationCurve submergeCurve;
-	public AnimationCurve dragCurve;
+	public AnimationCurve submergeCurve = AnimationCurve.Linear(0f, 0f, 1f, 1f);
+	public AnimationCurve dragCurve = AnimationCurve.Linear(0f, 1f, 1f, 1f);
 	public bool checkAgainstWaves;
 }

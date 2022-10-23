@@ -48,7 +48,8 @@ public class OWIK : MonoBehaviour
 	[SerializeField]
 	private int _iterLimit;
 	[SerializeField]
-	private float _weight;
+	private float _weight = 1f;
+	[Header("Debug")]
 	[SerializeField]
-	private bool _showConstraints;
+	private bool _showConstraints = true;
 }

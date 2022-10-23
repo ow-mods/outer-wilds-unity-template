@@ -27,6 +27,7 @@ public class NomaiConversationManager : MonoBehaviour
 	private OWTriggerVolume _watchPlayerVolume;
 	[SerializeField]
 	private CharacterDialogueTree _characterDialogueTree;
+	[Space]
 	[SerializeField]
 	private StonePair[] _questions;
 }

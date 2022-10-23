@@ -1,5 +1,7 @@
 using UnityEngine;
 
+[ImageEffectAllowedInSceneView]
+[RequireComponent(typeof(Camera))]
 public class StencilPreviewImageEffect : MonoBehaviour
 {
 	private enum Flag

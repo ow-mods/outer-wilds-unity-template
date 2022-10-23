@@ -8,6 +8,7 @@ public class SecretSlideReelAlcove : MonoBehaviour
 	private AbstractDoor _door;
 	[SerializeField]
 	private Sector _sector;
+	[Space]
 	[SerializeField]
 	private OWItemSocket _itemSocket;
 	[SerializeField]

@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(QuantumObject))]
 public class QuantumStateSwapper : MonoBehaviour
 {
 	[SerializeField]

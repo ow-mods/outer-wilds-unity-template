@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Audio;
 
+[AddComponentMenu("Audio/OW Audio Mixer", 200)]
 public class OWAudioMixer : MonoBehaviour
 {
 	public enum TrackName

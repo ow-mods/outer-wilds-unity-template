@@ -1,5 +1,7 @@
 using UnityEngine;
 
+[AddComponentMenu("Audio/Audio Signal Detection Trigger", 400)]
+[RequireComponent(typeof(OWTriggerVolume))]
 public class AudioSignalDetectionTrigger : MonoBehaviour
 {
 	[SerializeField]

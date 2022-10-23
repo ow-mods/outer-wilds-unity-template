@@ -3,9 +3,10 @@ using UnityEngine;
 public class PrisonerBrain : MonoBehaviour
 {
 	[SerializeField]
-	private string _name;
+	private string _name = "Kaepora";
 	[SerializeField]
-	private GhostNode.NodeLayer _nodeLayer;
+	private GhostNode.NodeLayer _nodeLayer = GhostNode.NodeLayer.Red;
+	[Space]
 	[SerializeField]
 	private PrisonerEffects _effects;
 	[SerializeField]

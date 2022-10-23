@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class ShipElectricalComponent : ShipComponent
 {
+	[Space(10f)]
 	[SerializeField]
 	protected ElectricalSystem _electricalSystem;
 	[SerializeField]
@@ -9,9 +10,9 @@ public class ShipElectricalComponent : ShipComponent
 	[SerializeField]
 	protected LandingCamera _landingCamera;
 	[SerializeField]
-	protected float _disruptionImpactSpeed;
+	protected float _disruptionImpactSpeed = 30f;
 	[SerializeField]
-	protected float _disruptionLength;
+	protected float _disruptionLength = 1f;
 	[SerializeField]
 	private OWAudioSource _audioSource;
 }

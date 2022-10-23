@@ -6,12 +6,14 @@ public class DetachOnFloodImpact : MonoBehaviour
 	private RingRiverFloodSensor _floodSensor;
 	[SerializeField]
 	private DetachableBuilding _detachableBuilding;
+	[Space]
 	[SerializeField]
 	private GameObject _detectorGameObject;
 	[SerializeField]
-	private Collider[] _preDetachColliders;
+	private Collider[] _preDetachColliders = new Collider[0];
 	[SerializeField]
-	private Collider[] _postDetachColliders;
+	private Collider[] _postDetachColliders = new Collider[0];
+	[Space]
 	[SerializeField]
 	private SectorCullGroup _cullGroup;
 	[SerializeField]

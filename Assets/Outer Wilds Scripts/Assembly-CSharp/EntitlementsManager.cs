@@ -11,6 +11,9 @@ public class EntitlementsManager : MonoBehaviour
 
 	[SerializeField]
 	private PopupMenu _popupMenu;
+	[Space(10f)]
+	[Header("Test values (editor only)")]
+	[Tooltip("Enable this to use test value")]
 	[SerializeField]
 	private bool _useTestValue;
 	[SerializeField]

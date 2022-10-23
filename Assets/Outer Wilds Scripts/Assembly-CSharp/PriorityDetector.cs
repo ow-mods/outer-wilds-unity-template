@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PriorityDetector : Detector
+public abstract class PriorityDetector : Detector
 {
 	[SerializeField]
 	private bool _printLog;

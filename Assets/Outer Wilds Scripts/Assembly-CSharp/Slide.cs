@@ -13,5 +13,5 @@ public class Slide
 	[SerializeField]
 	private byte[] _modulesData;
 	[SerializeField]
-	private int _streamingImageID;
+	private int _streamingImageID = -1;
 }

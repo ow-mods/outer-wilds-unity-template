@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(OWTriggerVolume))]
 public class AddToVolumeTrigger : MonoBehaviour
 {
 	[SerializeField]

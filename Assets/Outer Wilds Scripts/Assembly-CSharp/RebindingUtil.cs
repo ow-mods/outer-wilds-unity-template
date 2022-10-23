@@ -1,3 +1,3 @@
-public class RebindingUtil
+public static class RebindingUtil
 {
 }

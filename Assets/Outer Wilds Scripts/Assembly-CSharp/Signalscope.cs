@@ -1,7 +1,9 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Signalscope : PlayerTool
 {
+	[FormerlySerializedAs("_zoomModeUI")]
 	[SerializeField]
 	private SignalscopeUI _signalscopeUI;
 	[SerializeField]

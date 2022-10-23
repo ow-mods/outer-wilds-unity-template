@@ -8,14 +8,16 @@ public class AudioLoopCrossfader : MonoBehaviour
 	private OWAudioSource _oneShotAudioEnd;
 	[SerializeField]
 	private OWAudioSource _loopingAudio;
+	[Header("Start and end audio")]
 	[SerializeField]
 	private AudioType _startClip;
 	[SerializeField]
 	private AudioType _endClip;
+	[Header("Audio fade controls")]
 	[SerializeField]
 	private float _loopFadeInDuration;
 	[SerializeField]
 	private float _loopFadeOutDuration;
 	[SerializeField]
-	private float _cancelFadeDuration;
+	private float _cancelFadeDuration = 0.2f;
 }

@@ -16,11 +16,11 @@ public class FluidVolume : PriorityVolume
 	}
 
 	[SerializeField]
-	protected float _density;
+	protected float _density = 1.2f;
 	[SerializeField]
 	protected Type _fluidType;
 	[SerializeField]
-	protected bool _alignmentFluid;
+	protected bool _alignmentFluid = true;
 	[SerializeField]
 	protected bool _allowShipAutoroll;
 	[SerializeField]

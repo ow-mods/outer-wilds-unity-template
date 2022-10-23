@@ -1,3 +1,3 @@
-public class ISwitchLightingOptimization
+public interface ISwitchLightingOptimization
 {
 }

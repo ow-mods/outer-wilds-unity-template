@@ -5,5 +5,5 @@ public class EndlessReturnToPointVolume : EndlessTriggerVolume
 	[SerializeField]
 	private Transform _returnPoint;
 	[SerializeField]
-	private Vector3 _localReturnVelocity;
+	private Vector3 _localReturnVelocity = Vector3.zero;
 }

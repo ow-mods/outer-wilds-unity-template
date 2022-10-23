@@ -32,38 +32,44 @@ public class NomaiRemoteCameraPlatform : NomaiShared
 	private Sector _visualSector2;
 	[SerializeField]
 	private Shape _connectionBounds;
+	[Space]
 	[SerializeField]
 	private MeshRenderer _poolRenderer;
 	[SerializeField]
-	private float _poolFillLength;
+	private float _poolFillLength = 3f;
 	[SerializeField]
-	private float _poolEmptyLength;
+	private float _poolEmptyLength = 0.5f;
 	[SerializeField]
-	private AnimationCurve _poolHeightCurve;
+	private AnimationCurve _poolHeightCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
 	[SerializeField]
-	private AnimationCurve _poolMaskCurve;
+	private AnimationCurve _poolMaskCurve = AnimationCurve.Linear(0f, 1f, 1f, 0f);
 	[SerializeField]
-	private AnimationCurve _poolWaveHeightCurve;
+	private AnimationCurve _poolWaveHeightCurve = AnimationCurve.EaseInOut(0f, 0.01f, 1f, 0.05f);
+	[Space]
 	[SerializeField]
 	private Renderer[] _transitionRenderers;
 	[SerializeField]
 	private PedestalAnimator _transitionPedestalAnimator;
 	[SerializeField]
 	private GameObject _transitionStone;
+	[Space]
 	[SerializeField]
 	private GameObject _hologramGroup;
 	[SerializeField]
 	private Transform _playerHologram;
 	[SerializeField]
 	private Transform _stoneHologram;
+	[Space]
 	[SerializeField]
-	private float _fadeInLength;
+	private float _fadeInLength = 1.5f;
 	[SerializeField]
-	private float _fadeOutLength;
+	private float _fadeOutLength = 0.25f;
+	[Space]
 	[SerializeField]
 	private OWAudioSource _ambientAudioSource;
 	[SerializeField]
 	private OWAudioSource _oneShotAudioSource;
+	[Space]
 	[SerializeField]
 	private DarkZone _darkZone;
 }

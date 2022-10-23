@@ -1,6 +1,7 @@
 using UnityEngine;
 using System;
 
+[RequireComponent(typeof(NomaiComputer))]
 public class NomaiComputerSlotInterface : MonoBehaviour
 {
 	[Serializable]
@@ -26,4 +27,13 @@ public class NomaiComputerSlotInterface : MonoBehaviour
 	private ComputerEvent[] _onActivate;
 	[SerializeField]
 	private ComputerEvent[] _onDeactivate;
+
+	private void OnDrawGizmosSelected()
+	{
+		if (_slot != null)
+		{
+			Gizmos.color = Color.cyan;
+			Gizmos.DrawLine(base.transform.position, _slot.transform.position);
+		}
+	}
 }

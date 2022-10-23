@@ -13,7 +13,7 @@ public class MeshBatch : MonoBehaviour
 	[SerializeField]
 	private bool _spatialGrouping;
 	[SerializeField]
-	private float _groupingRadius;
+	private float _groupingRadius = 10f;
 	[SerializeField]
 	private bool _batchMeshColliders;
 	[SerializeField]

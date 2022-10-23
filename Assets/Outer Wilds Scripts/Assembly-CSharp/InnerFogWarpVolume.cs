@@ -8,10 +8,12 @@ public class InnerFogWarpVolume : SphericalFogWarpVolume
 	private OuterFogWarpVolume _linkedOuterWarpVolume;
 	[SerializeField]
 	private OuterFogWarpVolume.Name _linkedOuterWarpName;
+	[Space]
 	[SerializeField]
 	private OWRenderer _fogSphereRenderer;
 	[SerializeField]
 	private bool _useFarFogColor;
 	[SerializeField]
-	private Color _farFogColor;
+	[ColorUsage(false, true)]
+	private Color _farFogColor = Color.gray;
 }

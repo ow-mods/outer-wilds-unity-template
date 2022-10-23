@@ -16,12 +16,14 @@ public class NomaiMultiPartDoor : NomaiRotator
 		NEG_OPEN_POS_CLOSE = 3,
 	}
 
+	[Space(10f)]
 	[SerializeField]
 	protected NomaiInterfaceOrb[] _listInterfaceOrb;
 	[SerializeField]
 	protected StartingRotationState _rotationOnStart;
 	[SerializeField]
 	protected CycleType _cycleType;
+	[Space(10f)]
 	[SerializeField]
 	protected RotationObject[] _rotationObjectList;
 }

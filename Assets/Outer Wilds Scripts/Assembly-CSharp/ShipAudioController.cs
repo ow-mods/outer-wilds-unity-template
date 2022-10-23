@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class ShipAudioController : MonoBehaviour
 {
+	[Space(10f)]
 	[SerializeField]
 	private ShipElectricalComponent _shipElectrics;
+	[Space(10f)]
 	[SerializeField]
 	private OWAudioSource _alarmSource;
 	[SerializeField]
@@ -28,6 +30,7 @@ public class ShipAudioController : MonoBehaviour
 	private OWAudioSource _cockpitInstrumentsAudioSource2;
 	[SerializeField]
 	private OWAudioSource _ejectCoverSource;
+	[Space]
 	[SerializeField]
 	private OWAudioSource[] _hullImpactSources;
 }

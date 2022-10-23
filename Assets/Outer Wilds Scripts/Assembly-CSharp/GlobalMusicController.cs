@@ -8,6 +8,7 @@ public class GlobalMusicController : MonoBehaviour
 	private OWAudioSource _darkBrambleSource;
 	[SerializeField]
 	private OWAudioSource _endTimesSource;
+	[Space]
 	[SerializeField]
 	private OWAudioSource _finalEndTimesIntroSource;
 	[SerializeField]

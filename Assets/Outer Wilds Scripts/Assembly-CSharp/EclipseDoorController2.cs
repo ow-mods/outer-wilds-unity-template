@@ -12,10 +12,11 @@ public class EclipseDoorController2 : MonoBehaviour
 	private AbstractDoor[] _backDoors;
 	[SerializeField]
 	private AbstractDoor _frontDoor;
+	[Space]
 	[SerializeField]
-	private float _rotationSpeed;
+	private float _rotationSpeed = 180f;
 	[SerializeField]
-	private float _startingRotation;
+	private float _startingRotation = 270f;
 	[SerializeField]
-	private float _anglePrecision;
+	private float _anglePrecision = 10f;
 }

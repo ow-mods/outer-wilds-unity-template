@@ -1,3 +1,3 @@
-public class GhostConstants
+public static class GhostConstants
 {
 }

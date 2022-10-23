@@ -1,3 +1,3 @@
-public class OWTime
+public static class OWTime
 {
 }

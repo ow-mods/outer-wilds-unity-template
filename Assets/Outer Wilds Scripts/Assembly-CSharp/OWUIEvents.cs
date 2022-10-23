@@ -1,3 +1,3 @@
-public class OWUIEvents
+public static class OWUIEvents
 {
 }

@@ -6,6 +6,7 @@ public class DreamLibraryPedestal : MonoBehaviour
 	private float _simulationRadiusBuffer;
 	[SerializeField]
 	private bool _debugDrawFilledSphere;
+	[Space]
 	[SerializeField]
 	private DreamLanternSocket _socket;
 	[SerializeField]
@@ -17,7 +18,8 @@ public class DreamLibraryPedestal : MonoBehaviour
 	[SerializeField]
 	private Transform[] _flaps;
 	[SerializeField]
-	private float _maxFlapDegrees;
+	private float _maxFlapDegrees = 90f;
+	[Space]
 	[SerializeField]
 	private DreamSlideProjector _projector;
 	[SerializeField]
@@ -28,4 +30,18 @@ public class DreamLibraryPedestal : MonoBehaviour
 	private AbstractDoor[] _doorsToOpen;
 	[SerializeField]
 	private DreamLibraryFlame[] _flames;
+
+	private void OnDrawGizmosSelected()
+	{
+		if (_socket == null) return;
+		Gizmos.color = Color.green;
+		if (_debugDrawFilledSphere)
+		{
+			Gizmos.DrawSphere(_socket.transform.position, 20f + _simulationRadiusBuffer);
+		}
+		else
+		{
+			Gizmos.DrawWireSphere(_socket.transform.position, 20f + _simulationRadiusBuffer);
+		}
+	}
 }

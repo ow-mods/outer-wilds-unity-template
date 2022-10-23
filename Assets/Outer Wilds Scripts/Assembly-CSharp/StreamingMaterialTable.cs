@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 
 [Serializable]
+[CreateAssetMenu(fileName = "StreamingMaterialTable", menuName = "Streaming Material Table", order = 650)]
 public class StreamingMaterialTable : ScriptableObject
 {
 	[Serializable]
@@ -33,5 +34,6 @@ public class StreamingMaterialTable : ScriptableObject
 	[SerializeField]
 	public Type type;
 	[SerializeField]
+	[HideInInspector]
 	private MaterialPropertyLookup[] _materialPropertyLookups;
 }

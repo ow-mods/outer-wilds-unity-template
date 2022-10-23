@@ -7,5 +7,5 @@ public class PictureFrameDoorInterface : MonoBehaviour
 	[SerializeField]
 	protected RotatingDoor _door;
 	[SerializeField]
-	private string[] _revealFactIDs;
+	private string[] _revealFactIDs = new string[0];
 }

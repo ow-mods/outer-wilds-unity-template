@@ -10,7 +10,7 @@ public class NomaiText : SectoredMonoBehaviour
 	}
 
 	[SerializeField]
-	protected float _interactRange;
+	protected float _interactRange = 5f;
 	[SerializeField]
 	protected TextAsset _nomaiTextAsset;
 	[SerializeField]

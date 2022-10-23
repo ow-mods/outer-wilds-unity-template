@@ -1,5 +1,7 @@
 using UnityEngine;
 
+[AddComponentMenu("Audio/Audio Volume With Overlay", 401)]
+[RequireComponent(typeof(OWAudioSource))]
 public class AudioVolumeWithOverlay : AudioVolume
 {
 	[SerializeField]

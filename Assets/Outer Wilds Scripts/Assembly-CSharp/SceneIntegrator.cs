@@ -3,7 +3,7 @@ using UnityEngine;
 public class SceneIntegrator : MonoBehaviour
 {
 	[SerializeField]
-	private bool _enableCenterOfTheUniverse;
+	private bool _enableCenterOfTheUniverse = true;
 	[SerializeField]
 	private Vector3 _startPosition;
 	[SerializeField]
@@ -21,7 +21,7 @@ public class SceneIntegrator : MonoBehaviour
 	[SerializeField]
 	private bool _useDebugLoopCount;
 	[SerializeField]
-	private int _debugLoopCount;
+	private int _debugLoopCount = 2;
 	[SerializeField]
 	private int _debugStartAtMinute;
 	[SerializeField]

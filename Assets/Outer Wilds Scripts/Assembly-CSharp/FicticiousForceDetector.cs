@@ -5,5 +5,5 @@ public class FicticiousForceDetector : MonoBehaviour
 	[SerializeField]
 	private OWRigidbody _nonInertialFrame;
 	[SerializeField]
-	private Vector3 _angularFrameVelocity;
+	private Vector3 _angularFrameVelocity = Vector3.up;
 }

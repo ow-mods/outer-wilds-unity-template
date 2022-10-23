@@ -20,16 +20,18 @@ public class ProbeLauncher : PlayerTool
 	private GameObject _preLaunchProbeProxy;
 	[SerializeField]
 	private GameObject _probePrefab;
+	[Space]
 	[SerializeField]
 	private SingularityWarpEffect _probeRetrievalEffect;
 	[SerializeField]
-	private float _probeRetrievalLength;
+	private float _probeRetrievalLength = 0.5f;
+	[Space]
 	[SerializeField]
 	private bool _alwaysVisible;
 	[SerializeField]
 	private bool _shareActiveProbes;
 	[SerializeField]
-	private NotificationTarget _notificationFilter;
+	private NotificationTarget _notificationFilter = NotificationTarget.None;
 	[SerializeField]
 	private FluidDetector _fluidDetector;
 	[SerializeField]

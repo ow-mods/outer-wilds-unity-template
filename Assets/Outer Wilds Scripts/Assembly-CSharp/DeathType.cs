@@ -15,4 +15,5 @@ public enum DeathType
 	Dream = 12,
 	DreamExplosion = 13,
 	CrushedByElevator = 14,
+	BurnedByFire = 15
 }

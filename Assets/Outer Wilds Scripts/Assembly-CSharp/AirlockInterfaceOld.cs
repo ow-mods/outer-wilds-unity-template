@@ -12,6 +12,7 @@ public class AirlockInterfaceOld : AbstractGhostAirlockInterface
 	private AbstractGhostDoorInterface _frontInterface;
 	[SerializeField]
 	private AbstractGhostDoorInterface _backInterface;
+	[Space]
 	[SerializeField]
 	private float _maxSpeed;
 	[SerializeField]

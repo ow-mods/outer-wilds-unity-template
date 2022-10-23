@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(SphereCollider))]
 public class RadialForceVolume : ForceVolume
 {
 	public enum Falloff
@@ -12,5 +13,5 @@ public class RadialForceVolume : ForceVolume
 	[SerializeField]
 	private Falloff _falloff;
 	[SerializeField]
-	private float _acceleration;
+	private float _acceleration = 10f;
 }

@@ -7,9 +7,9 @@ public class CharacterDialogueTree : MonoBehaviour
 	[SerializeField]
 	private Transform _attentionPoint;
 	[SerializeField]
-	private Vector3 _attentionPointOffset;
+	private Vector3 _attentionPointOffset = Vector3.zero;
 	[SerializeField]
-	private bool _turnOffFlashlight;
+	private bool _turnOffFlashlight = true;
 	[SerializeField]
-	private bool _turnOnFlashlight;
+	private bool _turnOnFlashlight = true;
 }

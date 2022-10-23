@@ -9,6 +9,7 @@ public enum AudioType
 	Menu_Pause = 6,
 	Menu_Unpause = 7,
 	Menu_SliderIncrement = 8,
+	Menu_KonamiCode = 9,
 	ToolScopeEquip = 100,
 	ToolScopeUnequip = 101,
 	ToolScopeSwitchFreq = 104,
@@ -752,5 +753,5 @@ public enum AudioType
 	Prisoner_RevealToStand_Vocals_2 = 3052,
 	Prisoner_PickUpArtifact = 3053,
 	Prisoner_PickUpTorch = 3054,
-	Prisoner_ClothFoley = 3055,
+	Prisoner_ClothFoley = 3055
 }

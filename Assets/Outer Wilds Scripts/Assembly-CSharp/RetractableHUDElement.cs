@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class RetractableHUDElement : HUDElement
+public abstract class RetractableHUDElement : HUDElement
 {
 	[SerializeField]
 	private Vector3 _retractedOffset;

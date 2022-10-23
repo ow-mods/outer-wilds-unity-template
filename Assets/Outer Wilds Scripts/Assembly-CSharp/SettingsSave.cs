@@ -1,4 +1,6 @@
 using System;
+using System.Runtime.Serialization;
+using UnityEngine;
 
 [Serializable]
 public class SettingsSave
@@ -15,29 +17,45 @@ public class SettingsSave
 	}
 
 	public bool autoBoost;
-	public bool autoRun;
-	public bool autoEquipTranslator;
-	public TextSpeed textSpeed;
-	public bool freezeTimeWhileReading;
-	public bool showShipLogNotifications;
-	public bool detectiveModeEnabled;
-	public int inversionFactor;
-	public int lookSensitivity;
-	public int flightSensitivity;
-	public Difficulty difficulty;
-	public bool autopilotEnabled;
-	public bool buttonPromptsEnabled;
+	public bool autoRun = true;
+	public bool autoEquipTranslator = true;
+	public TextSpeed textSpeed = TextSpeed.Normal;
+	public bool freezeTimeWhileReading = true;
+	public bool showShipLogNotifications = true;
+	public bool detectiveModeEnabled = true;
+	public int inversionFactor = 1;
+	public int lookSensitivity = 5;
+	public int flightSensitivity = 5;
+	[OptionalField(VersionAdded = 2)]
+	public Difficulty difficulty = Difficulty.NORMAL;
+	[OptionalField(VersionAdded = 2)]
+	public bool autopilotEnabled = true;
+	[OptionalField(VersionAdded = 2)]
+	public bool buttonPromptsEnabled = true;
+	[OptionalField(VersionAdded = 7)]
 	public bool reducedFrights;
-	public int shipInversionFactor;
-	public bool rumbleEnabled;
-	public ButtonPromptImgSet promptImgSet;
+	[OptionalField(VersionAdded = 2)]
+	public int shipInversionFactor = 1;
+	[OptionalField(VersionAdded = 6)]
+	public bool rumbleEnabled = true;
+	[OptionalField(VersionAdded = 8)]
+	public ButtonPromptImgSet promptImgSet = ButtonPromptImgSet.DEFAULT;
+	[OptionalField(VersionAdded = 9)]
 	public UserDeviceInfo[] deviceEnabledList;
+	[OptionalField(VersionAdded = 3)]
 	public TextTranslation.Language language;
-	public bool freezeTimeWhileReadingShipLog;
+	[OptionalField(VersionAdded = 4)]
+	public bool freezeTimeWhileReadingShipLog = true;
+	[OptionalField(VersionAdded = 4)]
 	public bool freezeTimeWhileReadingConversations;
-	public float innerDeadZone;
-	public float outerDeadZone;
-	public float masterVolume;
-	public float musicVolume;
-	public float sfxVolume;
+	[OptionalField(VersionAdded = 2)]
+	public float innerDeadZone = 0.5f;
+	[OptionalField(VersionAdded = 2)]
+	public float outerDeadZone = 0.5f;
+	[OptionalField(VersionAdded = 2)]
+	public float masterVolume = 1f;
+	[OptionalField(VersionAdded = 5)]
+	public float musicVolume = 1f;
+	[OptionalField(VersionAdded = 7)]
+	public float sfxVolume = 1f;
 }

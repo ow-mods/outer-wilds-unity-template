@@ -3,6 +3,7 @@ using UnityEngine;
 using System.Collections.Generic;
 
 [Serializable]
+[PreferBinarySerialization]
 public class SceneMeshData : ScriptableObject
 {
 	[SerializeField]

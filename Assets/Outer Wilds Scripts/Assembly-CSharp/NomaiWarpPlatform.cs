@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(OWTriggerVolume))]
 public class NomaiWarpPlatform : MonoBehaviour
 {
 	public enum Frequency
@@ -19,14 +20,26 @@ public class NomaiWarpPlatform : MonoBehaviour
 	private Frequency _frequency;
 	[SerializeField]
 	private Transform _platformCenter;
+	[Space]
 	[SerializeField]
-	private Vector3 _localWarpPosition;
+	private Vector3 _localWarpPosition = Vector3.zero;
 	[SerializeField]
-	private float _warpRadius;
+	private float _warpRadius = 0.5f;
 	[SerializeField]
 	private bool _ignoreRelativeRotation;
+	[Space]
 	[SerializeField]
 	private SingularityController _blackHole;
 	[SerializeField]
 	private SingularityController _whiteHole;
+
+	private void OnDrawGizmosSelected()
+	{
+		if (OWGizmos.IsDirectlySelected(base.gameObject))
+		{
+			Gizmos.color = Color.green;
+			Gizmos.matrix = base.transform.localToWorldMatrix;
+			Gizmos.DrawWireSphere(_localWarpPosition, _warpRadius);
+		}
+	}
 }

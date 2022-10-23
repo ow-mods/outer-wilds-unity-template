@@ -1,3 +1,3 @@
-public class ITabHandler
+public interface ITabHandler
 {
 }

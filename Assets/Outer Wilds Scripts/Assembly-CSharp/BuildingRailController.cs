@@ -4,6 +4,7 @@ public class BuildingRailController : MonoBehaviour
 {
 	[SerializeField]
 	private Sector _sector;
+	[Space]
 	[SerializeField]
 	private RingRiverFloodSensor _floodSensor;
 	[SerializeField]

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ProxyBody : MonoBehaviour
+public abstract class ProxyBody : MonoBehaviour
 {
 	[SerializeField]
 	protected Transform _realObjectTransform;

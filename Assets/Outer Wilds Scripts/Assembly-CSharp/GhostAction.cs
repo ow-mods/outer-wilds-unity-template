@@ -19,5 +19,4 @@ public class GhostAction
 		Stalk = 52,
 		Grab = 60,
 	}
-
 }

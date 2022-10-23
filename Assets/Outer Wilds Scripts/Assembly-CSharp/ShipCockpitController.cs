@@ -7,9 +7,9 @@ public class ShipCockpitController : MonoBehaviour
 	[SerializeField]
 	private ShipLight _landingLight;
 	[SerializeField]
-	private ShipLight[] _dimmingLights;
+	private ShipLight[] _dimmingLights = new ShipLight[0];
 	[SerializeField]
-	private float _dimmingLightScale;
+	private float _dimmingLightScale = 0.5f;
 	[SerializeField]
 	private ProbeLauncher _shipProbeLauncher;
 	[SerializeField]
@@ -19,9 +19,9 @@ public class ShipCockpitController : MonoBehaviour
 	[SerializeField]
 	private Collider[] _fogLightOcclusionColliders;
 	[SerializeField]
-	private ShipCanvasGroup[] _shipCanvases;
+	private ShipCanvasGroup[] _shipCanvases = new ShipCanvasGroup[0];
 	[SerializeField]
-	private ShipCanvasGroup[] _dashboardCanvases;
+	private ShipCanvasGroup[] _dashboardCanvases = new ShipCanvasGroup[0];
 	[SerializeField]
 	private LandingCamera _landingCam;
 }

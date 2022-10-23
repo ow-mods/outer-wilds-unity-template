@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Shape : MonoBehaviour
+public abstract class Shape : MonoBehaviour
 {
 	public enum CollisionMode
 	{
@@ -20,9 +20,9 @@ public class Shape : MonoBehaviour
 	[SerializeField]
 	protected CollisionMode _collisionMode;
 	[SerializeField]
-	protected Layer _layer;
+	protected Layer _layer = Layer.Default;
 	[SerializeField]
-	protected int _layerMask;
+	protected int _layerMask = -1;
 	[SerializeField]
 	protected bool _pointChecksOnly;
 }

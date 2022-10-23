@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Collider))]
 public class SubstanceVolume : MonoBehaviour
 {
 	public enum SubstanceType

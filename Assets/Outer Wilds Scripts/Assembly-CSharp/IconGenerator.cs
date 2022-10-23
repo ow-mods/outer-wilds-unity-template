@@ -1,3 +1,3 @@
-public class IconGenerator
+public static class IconGenerator
 {
 }

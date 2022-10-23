@@ -11,5 +11,5 @@ public class FragmentEffects : MonoBehaviour
 	[SerializeField]
 	private OWRenderer[] _destructionRenderers;
 	[SerializeField]
-	private float _destructionDissolveLength;
+	private float _destructionDissolveLength = 2f;
 }

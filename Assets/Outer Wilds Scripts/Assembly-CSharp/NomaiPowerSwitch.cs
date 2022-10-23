@@ -4,12 +4,13 @@ public class NomaiPowerSwitch : MonoBehaviour
 {
 	[SerializeField]
 	private NomaiInterfaceSlot _powerSourceSlot;
+	[Space]
 	[SerializeField]
 	private bool _startOn;
 	[SerializeField]
 	private NomaiInterfaceSlot _slot;
 	[SerializeField]
-	private float _fadeDuration;
+	private float _fadeDuration = 3f;
 	[SerializeField]
 	private NomaiLamp[] _onLamps;
 	[SerializeField]
@@ -22,6 +23,7 @@ public class NomaiPowerSwitch : MonoBehaviour
 	private TractorBeamController[] _offTractorBeams;
 	[SerializeField]
 	private NomaiEnergyCable _energyCable;
+	[Space]
 	[SerializeField]
 	private OWAudioSource _audioSource;
 	[SerializeField]

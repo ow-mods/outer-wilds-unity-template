@@ -1,11 +1,34 @@
-public class InputConsts
+using System;
+
+public static class InputConsts
 {
+	[Flags]
 	public enum InputType
 	{
 		None = 0,
 		GamePad = 1,
 		Keyboard = 4,
 		Mouse = 8,
+	}
+
+	public enum InputValueType
+	{
+		NONE,
+		BUTTON,
+		SINGLE_AXIS,
+		DOUBLE_AXIS
+	}
+
+	public struct UITextTypeInputs
+	{
+		public UITextType InputID;
+		public UITextType TooltipID;
+
+		public UITextTypeInputs(UITextType inputID, UITextType tooltipID)
+		{
+			InputID = inputID;
+			TooltipID = tooltipID;
+		}
 	}
 
 	public enum InputCommandType
@@ -43,6 +66,10 @@ public class InputConsts
 		SHIFTL = 128,
 		SHIFTR = 129,
 		PAUSE = 130,
+		FACE_UP = 131,
+		FACE_DOWN = 132,
+		FACE_LEFT = 133,
+		FACE_RIGHT = 134,
 		SWAP_SHIP_LOG_MODE = 200,
 		MARK_ENTRY_ON_HUD = 201,
 		SCROLLING_TEXT = 202,

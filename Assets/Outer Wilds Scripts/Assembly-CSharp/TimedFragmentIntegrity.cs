@@ -7,5 +7,5 @@ public class TimedFragmentIntegrity : FragmentIntegrity
 	[SerializeField]
 	private float _latestTime;
 	[SerializeField]
-	protected float _damageMultiplierWhenTime;
+	protected float _damageMultiplierWhenTime = 1f;
 }

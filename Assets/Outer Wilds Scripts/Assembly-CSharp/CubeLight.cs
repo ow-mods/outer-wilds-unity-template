@@ -20,21 +20,21 @@ public class CubeLight : SectoredMonoBehaviour
 	[SerializeField]
 	private bool _updateFrustums;
 	[SerializeField]
-	private bool _cameraTest;
+	private bool _cameraTest = true;
 	[SerializeField]
-	private int _renderTextureSize;
+	private int _renderTextureSize = 1024;
 	[SerializeField]
-	private float _cascadeBlendRange;
+	private float _cascadeBlendRange = 50f;
 	[SerializeField]
-	private float _range;
+	private float _range = 50000f;
 	[SerializeField]
 	private float _receiverPlaneDepthBias;
 	[SerializeField]
-	private float _distanceBias;
+	private float _distanceBias = 0.985f;
 	[SerializeField]
-	private float _padOffset;
+	private float _padOffset = 0.0108f;
 	[SerializeField]
-	private float _padExponent;
+	private float _padExponent = 500f;
 	[SerializeField]
 	private Light _light;
 	[SerializeField]

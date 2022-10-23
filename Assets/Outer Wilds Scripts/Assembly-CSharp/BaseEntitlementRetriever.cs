@@ -1,3 +1,3 @@
-public class BaseEntitlementRetriever
+public abstract class BaseEntitlementRetriever
 {
 }

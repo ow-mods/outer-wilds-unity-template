@@ -10,20 +10,24 @@ public class SlideProjector : SectoredMonoBehaviour
 	private SlideProjectorSocket _socket;
 	[SerializeField]
 	private LightSensor _lightSensor;
+	[Header("Flood")]
 	[SerializeField]
 	private RingRiverFloodSensor _floodSensor;
 	[SerializeField]
 	private OWLightController _gearLightController;
+	[Space]
 	[SerializeField]
 	private OWLight2 _light;
 	[SerializeField]
 	private OWLightController _lightController;
 	[SerializeField]
 	private OWRendererFadeController _lightShaftController;
+	[Space]
 	[SerializeField]
 	protected OWLightController _houseLightController;
 	[SerializeField]
 	private OWLightController _bounceLightController;
+	[Space]
 	[SerializeField]
 	private OWAudioSource _oneShotSource;
 	[SerializeField]

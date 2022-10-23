@@ -39,4 +39,12 @@ public class Achievements : MonoBehaviour
 		TOTAL = 32,
 	}
 
+	public enum HeroStat
+	{
+		FULL_TIMELOOP,
+		PERFECT_MARSHMALLOW,
+		TIMELOOP_COUNT,
+		TOTAL
+	}
+
 }

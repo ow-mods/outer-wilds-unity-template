@@ -5,17 +5,17 @@ public class TitleAnimationController : MonoBehaviour
 	[SerializeField]
 	private AnimationCurve _fadeCurve;
 	[SerializeField]
-	private float _logoFadeDelay;
+	private float _logoFadeDelay = 1f;
 	[SerializeField]
-	private float _logoFadeDuration;
+	private float _logoFadeDuration = 5f;
 	[SerializeField]
-	private float _echoesFadeDelay;
+	private float _echoesFadeDelay = 1f;
 	[SerializeField]
-	private float _optionsFadeDelay;
+	private float _optionsFadeDelay = 2f;
 	[SerializeField]
-	private float _optionsFadeDuration;
+	private float _optionsFadeDuration = 5f;
 	[SerializeField]
-	private float _optionsFadeSpacing;
+	private float _optionsFadeSpacing = 0.3f;
 	[SerializeField]
 	private CanvasGroupFadeController _logoFadeController;
 	[SerializeField]

@@ -1,3 +1,3 @@
-public class RulesetVolume : EffectVolume
+public abstract class RulesetVolume : EffectVolume
 {
 }

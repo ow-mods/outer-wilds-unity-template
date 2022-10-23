@@ -9,5 +9,5 @@ public class DreamWorldGravityController : MonoBehaviour
 	[SerializeField]
 	private AnimationCurve _stageTwoCurve;
 	[SerializeField]
-	private Vector3 _localTiltAxis;
+	private Vector3 _localTiltAxis = Vector3.forward;
 }

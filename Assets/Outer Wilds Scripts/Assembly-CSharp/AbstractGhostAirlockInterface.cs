@@ -1,5 +1,5 @@
 using UnityEngine;
 
-public class AbstractGhostAirlockInterface : MonoBehaviour
+public abstract class AbstractGhostAirlockInterface : MonoBehaviour
 {
 }

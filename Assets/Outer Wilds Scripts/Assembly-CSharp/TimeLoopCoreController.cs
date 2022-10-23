@@ -12,6 +12,7 @@ public class TimeLoopCoreController : MonoBehaviour
 	private WarpCoreSocket _warpCoreSocket;
 	[SerializeField]
 	private TransformAnimator[] _panelAnimators;
+	[Space(10f)]
 	[SerializeField]
 	private SingularityController _blackHoleEffect;
 	[SerializeField]
@@ -20,12 +21,15 @@ public class TimeLoopCoreController : MonoBehaviour
 	private TimeLoopBlackHoleVolume _timeLoopBlackHoleVolume;
 	[SerializeField]
 	private TimeLoopLightController _timeLoopLightController;
+	[Space(10f)]
 	[SerializeField]
 	private GameObject[] _dataStreamObjects;
 	[SerializeField]
 	private OWAudioSource _dataStreamAudio;
+	[Space(10f)]
 	[SerializeField]
 	private Renderer _chamberDestructionEffect;
+	[Space(10f)]
 	[SerializeField]
 	private TravelerController _duplicatePlayer;
 	[SerializeField]

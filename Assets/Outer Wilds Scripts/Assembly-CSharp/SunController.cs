@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class SunController : MonoBehaviour
 {
+	[Header("References")]
 	[SerializeField]
 	private ReferenceFrameVolume _rfVolume;
 	[SerializeField]
@@ -26,48 +27,59 @@ public class SunController : MonoBehaviour
 	private OWAudioSource _oneShotSource;
 	[SerializeField]
 	private Transform _lightShaftRoot;
+	[Header("Progression ")]
 	[SerializeField]
-	private float _progressionStartTime;
+	private float _progressionStartTime = 1f;
 	[SerializeField]
-	private float _progressionEndTime;
+	private float _progressionEndTime = 19f;
+	[Space]
 	[SerializeField]
-	private float _endScale;
+	private float _endScale = 2f;
 	[SerializeField]
-	private float _fogEndRadius;
+	private float _fogEndRadius = 4250f;
 	[SerializeField]
-	private float _fogEndFadeDistance;
+	private float _fogEndFadeDistance = 250f;
 	[SerializeField]
-	private float _scaleStartTime;
+	private float _scaleStartTime = 10f;
 	[SerializeField]
-	private float _scaleEndTime;
+	private float _scaleEndTime = 19f;
+	[Space]
 	[SerializeField]
-	private Gradient _atmosphereColor;
+	private Gradient _atmosphereColor = new Gradient();
+	[Space]
 	[SerializeField]
 	private Material _startSurfaceMaterial;
 	[SerializeField]
 	private Material _endSurfaceMaterial;
+	[Space]
 	[SerializeField]
-	private Gradient _solarFlareTint;
+	private Gradient _solarFlareTint = new Gradient();
+	[Space]
 	[SerializeField]
-	private float _endLightIntensity;
+	private float _endLightIntensity = 0.5f;
 	[SerializeField]
-	private Gradient _lightColor;
+	private Gradient _lightColor = new Gradient();
+	[Header("Collapse")]
 	[SerializeField]
-	private float _collapseLength;
+	private float _collapseLength = 10f;
 	[SerializeField]
-	private float _collapsedScale;
+	private float _collapsedScale = 0.1f;
+	[Space]
 	[SerializeField]
-	private ParticleSystem[] _collapseParticles;
+	private ParticleSystem[] _collapseParticles = new ParticleSystem[0];
+	[Space]
 	[SerializeField]
-	private Gradient _collapseAtmosphereColor;
+	private Gradient _collapseAtmosphereColor = new Gradient();
+	[Space]
 	[SerializeField]
 	private Material _collapseTransitionMaterial;
 	[SerializeField]
 	private Material _collapseStartSurfaceMaterial;
 	[SerializeField]
 	private Material _collapseEndSurfaceMaterial;
+	[Header("Supernova")]
 	[SerializeField]
-	private Color _lightBlastColor;
+	private Color _lightBlastColor = Color.white;
 	[SerializeField]
 	private AnimationCurve _lightFlareCurve;
 }

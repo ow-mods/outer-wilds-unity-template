@@ -8,6 +8,7 @@ public class QuantumState : MonoBehaviour
 	private bool _checkPlayerDistance;
 	[SerializeField]
 	private float _maxPlayerDistance;
+	[Space]
 	[SerializeField]
 	private Light _blockingLight;
 }

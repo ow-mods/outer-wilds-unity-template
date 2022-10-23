@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace UnityEngine.UI
 {
+	[AddComponentMenu("UI/Effects/Letter Spacing", 15)]
 	public class TextStyleApplier : BaseMeshEffect
 	{
 		public override void ModifyMesh(VertexHelper vh)

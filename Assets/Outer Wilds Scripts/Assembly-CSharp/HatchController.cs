@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(InteractVolume))]
 public class HatchController : MonoBehaviour
 {
 	[SerializeField]
@@ -11,7 +12,7 @@ public class HatchController : MonoBehaviour
 	[SerializeField]
 	private float _hatchOpenTime;
 	[SerializeField]
-	private Vector3 _hatchClosedRotation;
+	private Vector3 _hatchClosedRotation = new Vector3(180f, 0f, 0f);
 	[SerializeField]
-	private Vector3 _hatchOpenedRotation;
+	private Vector3 _hatchOpenedRotation = Vector3.zero;
 }

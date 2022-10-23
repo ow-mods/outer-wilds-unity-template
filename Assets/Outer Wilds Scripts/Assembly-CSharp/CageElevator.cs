@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class CageElevator : MonoBehaviour
 {
+	[Header("References")]
 	[SerializeField]
 	private OWRigidbody _platformBody;
+	[Tooltip("Destination transforms, MUST be in order bottom - top")]
 	[SerializeField]
 	private ElevatorDestination[] _destinations;
 	[SerializeField]
@@ -23,7 +25,7 @@ public class CageElevator : MonoBehaviour
 	[SerializeField]
 	private Transform _chainsEndPoint;
 	[SerializeField]
-	private float _initChainLength;
+	private float _initChainLength = 3f;
 	[SerializeField]
 	private OWCollider _leftDoorStandIn;
 	[SerializeField]
@@ -34,10 +36,11 @@ public class CageElevator : MonoBehaviour
 	private OWLightController _topLight;
 	[SerializeField]
 	private OWRenderer _teleportChainsRenderer;
+	[Header("Controls")]
 	[SerializeField]
 	private int _startDestination;
 	[SerializeField]
-	private bool _startOpen;
+	private bool _startOpen = true;
 	[SerializeField]
 	private bool _lightsStartOff;
 	[SerializeField]
@@ -48,6 +51,7 @@ public class CageElevator : MonoBehaviour
 	private float _descendAccel;
 	[SerializeField]
 	private float _descendMaxSpeed;
+	[Header("Audio")]
 	[SerializeField]
 	private OWAudioSource _oneShotAudio;
 	[SerializeField]

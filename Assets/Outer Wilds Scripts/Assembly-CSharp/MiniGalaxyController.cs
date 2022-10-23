@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(PrefabSpawner))]
 public class MiniGalaxyController : MonoBehaviour
 {
 	[SerializeField]

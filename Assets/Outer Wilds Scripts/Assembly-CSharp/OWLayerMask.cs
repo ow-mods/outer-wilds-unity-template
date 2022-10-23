@@ -1,3 +1,3 @@
-public class OWLayerMask
+public static class OWLayerMask
 {
 }

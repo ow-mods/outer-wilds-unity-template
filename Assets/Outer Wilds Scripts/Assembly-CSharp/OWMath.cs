@@ -1,3 +1,3 @@
-public class OWMath
+public static class OWMath
 {
 }

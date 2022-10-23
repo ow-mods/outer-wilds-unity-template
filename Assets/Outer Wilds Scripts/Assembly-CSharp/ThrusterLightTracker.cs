@@ -5,5 +5,5 @@ public class ThrusterLightTracker : MonoBehaviour
 	[SerializeField]
 	private Light[] _thrusterLights;
 	[SerializeField]
-	private float _buffer;
+	private float _buffer = 2f;
 }

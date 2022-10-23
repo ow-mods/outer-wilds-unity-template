@@ -9,5 +9,5 @@ public class PrisonStencilHack : MonoBehaviour
 	[SerializeField]
 	private OWRenderer _bottomStencil;
 	[SerializeField]
-	private float _floodLerpSwapTime;
+	private float _floodLerpSwapTime = 0.62f;
 }

@@ -7,5 +7,5 @@ public class TranslatedSign : MonoBehaviour
 	[SerializeField]
 	private Transform _attentionPoint;
 	[SerializeField]
-	private Vector3 _attentionPointOffset;
+	private Vector3 _attentionPointOffset = Vector3.zero;
 }

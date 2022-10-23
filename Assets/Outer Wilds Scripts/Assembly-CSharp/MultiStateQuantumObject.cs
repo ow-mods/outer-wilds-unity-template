@@ -5,7 +5,7 @@ public class MultiStateQuantumObject : QuantumObject
 	[SerializeField]
 	private QuantumState[] _states;
 	[SerializeField]
-	private int _initialState;
+	private int _initialState = -1;
 	[SerializeField]
 	private bool _sequential;
 	[SerializeField]

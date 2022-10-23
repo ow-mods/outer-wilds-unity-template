@@ -1,3 +1,3 @@
-public class InputAxis
+public abstract class InputAxis
 {
 }

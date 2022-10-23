@@ -7,13 +7,13 @@ public class SparkEffectController : MonoBehaviour
 	[SerializeField]
 	private Light _sparkLight;
 	[SerializeField]
-	private float _minSparkDelay;
+	private float _minSparkDelay = 1f;
 	[SerializeField]
-	private float _maxSparkDelay;
+	private float _maxSparkDelay = 3f;
 	[SerializeField]
-	private int _minSparkCount;
+	private int _minSparkCount = 2;
 	[SerializeField]
-	private int _maxSparkCount;
+	private int _maxSparkCount = 7;
 	[SerializeField]
-	private float _sparkLightFadeSpeed;
+	private float _sparkLightFadeSpeed = 1f;
 }

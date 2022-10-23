@@ -7,5 +7,5 @@ public class LighthouseSignalController : MonoBehaviour
 	[SerializeField]
 	private OWRenderer[] _signalRenderers;
 	[SerializeField]
-	private float _fadeTime;
+	private float _fadeTime = 0.2f;
 }

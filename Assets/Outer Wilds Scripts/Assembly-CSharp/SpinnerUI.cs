@@ -7,5 +7,5 @@ public class SpinnerUI : MonoBehaviour
 	[SerializeField]
 	private RectTransform _spinnerTransform;
 	[SerializeField]
-	private float _spinnerSpeed;
+	private float _spinnerSpeed = -180f;
 }

@@ -6,6 +6,7 @@ public class CullingSystemTest : MonoBehaviour
 	[SerializeField]
 	private GameObject planetCenter;
 	[SerializeField]
+	[Range(-1f, 1f)]
 	private float DOT;
 	[SerializeField]
 	private MeshRenderer[] _MeshRenderers;

@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class DreamCampfire : Campfire
 {
+	[Space]
 	[SerializeField]
 	private DreamArrivalPoint.Location _dreamArrivalLocation;
 	[SerializeField]
@@ -14,4 +15,6 @@ public class DreamCampfire : Campfire
 	private AlarmBell _alarmBell;
 	[SerializeField]
 	private OWFlameController _mummyCircleFlameController;
+	[SerializeField]
+	private OWLightController _houseLightController;
 }

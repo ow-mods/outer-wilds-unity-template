@@ -15,7 +15,7 @@ public class DecalProjector : MonoBehaviour
 	[SerializeField]
 	public bool _staggerTrimmedTriangles;
 	[SerializeField]
-	public bool _drawProjectorCube;
+	public bool _drawProjectorCube = true;
 	[SerializeField]
 	public bool _drawMeshTangents;
 	[SerializeField]
@@ -23,13 +23,15 @@ public class DecalProjector : MonoBehaviour
 	[SerializeField]
 	private Texture2D _texture;
 	[SerializeField]
-	private Vector2 _textureUVMin;
+	private Vector2 _textureUVMin = Vector2.zero;
 	[SerializeField]
-	private Vector2 _textureUVMax;
+	private Vector2 _textureUVMax = new Vector2(1f, 1f);
 	[SerializeField]
-	public UVSplittingDimensions _tilingDimensions;
+	public UVSplittingDimensions _tilingDimensions = UVSplittingDimensions.FOUR_BY_FOUR;
+	[HideInInspector]
 	[SerializeField]
 	protected GameObject _projectedMesh;
+	[HideInInspector]
 	[SerializeField]
-	protected string _projectionAssetGuid;
+	protected string _projectionAssetGuid = string.Empty;
 }

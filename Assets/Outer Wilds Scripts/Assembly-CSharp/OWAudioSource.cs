@@ -1,7 +1,16 @@
 using UnityEngine;
 
+[AddComponentMenu("Audio/OW Audio Source", 250)]
+[RequireComponent(typeof(AudioSource))]
 public class OWAudioSource : MonoBehaviour
 {
+	public enum FadeOutCompleteAction
+	{
+		STOP,
+		PAUSE,
+		CONTINUE
+	}
+
 	public enum ClipSelectionOnPlay
 	{
 		RANDOM = 0,

@@ -11,7 +11,7 @@ public class PolarForceVolume : ForceVolume
 	[SerializeField]
 	private ForceMode _fieldMode;
 	[SerializeField]
-	private float _acceleration;
+	private float _acceleration = 10f;
 	[SerializeField]
-	private Vector3 _localAxis;
+	private Vector3 _localAxis = Vector3.up;
 }

@@ -18,6 +18,7 @@ public class ThrustAndAttitudeIndicator : MonoBehaviour
 	private MeshRenderer _rendererDown;
 	[SerializeField]
 	private MeshRenderer _boostArrows;
+	[Space(16f)]
 	[SerializeField]
 	private Light[] _lightsForward;
 	[SerializeField]
@@ -30,12 +31,14 @@ public class ThrustAndAttitudeIndicator : MonoBehaviour
 	private Light[] _lightsUp;
 	[SerializeField]
 	private Light[] _lightsDown;
+	[Space(16f)]
 	[SerializeField]
 	private Transform _yawCircle;
 	[SerializeField]
 	private Transform _pitchCircle;
 	[SerializeField]
 	private Transform _rollCircle;
+	[Space(16f)]
 	[SerializeField]
 	private bool _reticuleMode;
 	[SerializeField]

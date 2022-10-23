@@ -1,6 +1,7 @@
 using System;
 
 [Serializable]
+[Obsolete("Use InputCommands/InputAction instead", false)]
 public class InputRebindable
 {
 	public enum InputType
@@ -19,8 +20,18 @@ public class InputRebindable
 		VERTICAL = 2,
 	}
 
-	public InputRebindable(RebindableID id, InputRebindable.InputType inputType, InputRebindable.AxisDirection direction)
+	public enum BindingCategory
+	{
+		UNDEFINED,
+		GAMEPAD,
+		KEYBD_MOUSE
+	}
+
+	public InputRebindable(RebindableID id, InputType inputType, AxisDirection direction = AxisDirection.UNDEFINED)
 	{
 	}
 
+	public InputRebindable(UITextType labelType, InputType inputType, AxisDirection direction = AxisDirection.UNDEFINED)
+	{
+	}
 }

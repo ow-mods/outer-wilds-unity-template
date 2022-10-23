@@ -7,6 +7,7 @@ public class SettingsManager : MonoBehaviour
 	private TabbedMenu _mainSettingsMenu;
 	[SerializeField]
 	private SubmitAction _resetSettingsActionByCommand;
+	[Space(10f)]
 	[SerializeField]
 	private SubmitAction _resetSettingsAction;
 	[SerializeField]
@@ -15,6 +16,8 @@ public class SettingsManager : MonoBehaviour
 	private ButtonWithHotkeyImageElement _resetSettingsFooterButton;
 	[SerializeField]
 	private ButtonWithHotkeyImageElement _closeMenuFooterButton;
+	[Space(10f)]
+	[Header("Gameplay Menu")]
 	[SerializeField]
 	private Menu _gameplayMenu;
 	[SerializeField]
@@ -37,6 +40,8 @@ public class SettingsManager : MonoBehaviour
 	private MenuOption _toggleAutopilot;
 	[SerializeField]
 	private MenuOption _toggleButtonPrompts;
+	[Space(10f)]
+	[Header("Text/Audio Menu")]
 	[SerializeField]
 	private Menu _textAudioMenu;
 	[SerializeField]
@@ -55,6 +60,8 @@ public class SettingsManager : MonoBehaviour
 	private TwoButtonToggleElement _toggleReadFreezeTimeConversation;
 	[SerializeField]
 	private OptionsSelectorElement _optionsLanguage;
+	[Space(10f)]
+	[Header("Input Menu")]
 	[SerializeField]
 	private Menu _inputMenu;
 	[SerializeField]
@@ -75,6 +82,8 @@ public class SettingsManager : MonoBehaviour
 	private SliderElement _sliderOuterDeadZone;
 	[SerializeField]
 	private Button _buttonRemapControls;
+	[Space(10f)]
+	[Header("Graphics Menu")]
 	[SerializeField]
 	private Menu _graphicsMenu;
 	[SerializeField]

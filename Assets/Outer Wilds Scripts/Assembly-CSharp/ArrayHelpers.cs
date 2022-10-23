@@ -1,3 +1,3 @@
-public class ArrayHelpers
+public static class ArrayHelpers
 {
 }

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PriorityVolume : EffectVolume
+public abstract class PriorityVolume : EffectVolume
 {
 	[SerializeField]
 	private int _layer;

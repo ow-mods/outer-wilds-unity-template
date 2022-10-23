@@ -3,9 +3,9 @@ using UnityEngine;
 public class SatelliteSnapshotController : MonoBehaviour
 {
 	[SerializeField]
-	private bool _allowRearview;
+	private bool _allowRearview = true;
 	[SerializeField]
-	private bool _showSplashTexture;
+	private bool _showSplashTexture = true;
 	[SerializeField]
 	private GameObject _splashObject;
 	[SerializeField]
@@ -18,6 +18,7 @@ public class SatelliteSnapshotController : MonoBehaviour
 	private FadeLight _fadeLight;
 	[SerializeField]
 	private MeshRenderer _probeMesh;
+	[Space]
 	[SerializeField]
 	private OWAudioSource _loopingSource;
 	[SerializeField]

@@ -23,13 +23,13 @@ public class ReferenceFrameGUI : MonoBehaviour
 	[SerializeField]
 	private LockOnReticule _reticule2;
 	[SerializeField]
-	private Color _departingColor;
+	private Color _departingColor = new Color(1f, 0f, 0f, 1f);
 	[SerializeField]
-	private Color _approachingColor;
+	private Color _approachingColor = new Color(0f, 1f, 0.333f, 1f);
 	[SerializeField]
-	private Color _staticColor;
+	private Color _staticColor = Color.white;
 	[SerializeField]
-	private float _possLockReticuleAlpha;
+	private float _possLockReticuleAlpha = 0.25f;
 	[SerializeField]
 	private OffScreenIndicator _offScreenIndicator;
 	[SerializeField]

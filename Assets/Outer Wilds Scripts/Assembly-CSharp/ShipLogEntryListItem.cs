@@ -22,7 +22,7 @@ public class ShipLogEntryListItem : MonoBehaviour
 	[SerializeField]
 	private Image _moreToExploreIcon;
 	[SerializeField]
-	private int _entryFontSize;
+	private int _entryFontSize = 20;
 	[SerializeField]
-	private int _subEntryFontSize;
+	private int _subEntryFontSize = 14;
 }

@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
+[AddComponentMenu("Sectors/Sector", 100)]
 public class Sector : MonoBehaviour
 {
 	public enum Name

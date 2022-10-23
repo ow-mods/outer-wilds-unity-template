@@ -4,6 +4,7 @@ public class RaftDock : RaftCarrier
 {
 	[SerializeField]
 	private RaftController _startRaft;
+	[Space]
 	[SerializeField]
 	private InteractReceiver _interactReceiver;
 	[SerializeField]
@@ -16,10 +17,16 @@ public class RaftDock : RaftCarrier
 	private OWTriggerVolume _raftDetectorVolume;
 	[SerializeField]
 	private RaftDockLights _lightsController;
+	[Header("Raft Proxy Collision")]
 	[SerializeField]
 	private Transform _raftProxyColliderRoot;
 	[SerializeField]
 	private OWCollider[] _raftProxyColliders;
-	[SerializeField]
-	private float _postFloodDisableTime;
+
+	private void OnDrawGizmosSelected()
+	{
+		Gizmos.color = Color.red;
+		Gizmos.matrix = Matrix4x4.TRS(base.transform.position, base.transform.rotation, Vector3.one);
+		Gizmos.DrawWireCube(Vector3.zero, new Vector3(6f, 1f, 6f));
+	}
 }

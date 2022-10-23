@@ -1,3 +1,3 @@
-public class BaseInputManager
+public abstract class BaseInputManager
 {
 }

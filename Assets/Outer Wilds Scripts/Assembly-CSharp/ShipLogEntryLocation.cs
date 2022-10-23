@@ -3,7 +3,7 @@ using UnityEngine;
 public class ShipLogEntryLocation : MonoBehaviour
 {
 	[SerializeField]
-	private string _entryID;
+	private string _entryID = string.Empty;
 	[SerializeField]
 	private OuterFogWarpVolume _outerFogWarpVolume;
 	[SerializeField]

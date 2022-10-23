@@ -6,6 +6,7 @@ public class NomaiInterfaceOrb : SectoredMonoBehaviour
 	private Collider _interactibleCollider;
 	[SerializeField]
 	private SphereCollider _physicalCollider;
+	[Space]
 	[SerializeField]
 	private Renderer _glowRenderer;
 	[SerializeField]
@@ -15,13 +16,16 @@ public class NomaiInterfaceOrb : SectoredMonoBehaviour
 	[SerializeField]
 	private Light _extraGlowLight;
 	[SerializeField]
-	private Color _draggingGlowColor;
+	[ColorUsage(false, true)]
+	private Color _draggingGlowColor = Color.white;
+	[Space]
 	[SerializeField]
-	private float _startDragDist;
+	private float _startDragDist = 5f;
 	[SerializeField]
-	private float _cancelDragDist;
+	private float _cancelDragDist = 15f;
 	[SerializeField]
-	private float _maxSpeed;
+	private float _maxSpeed = 5f;
+	[Space]
 	[SerializeField]
 	private GameObject _slotRoot;
 	[SerializeField]
@@ -32,6 +36,7 @@ public class NomaiInterfaceOrb : SectoredMonoBehaviour
 	private bool _isQuantum;
 	[SerializeField]
 	private bool _isOnFragment;
+	[Space]
 	[SerializeField]
 	private bool _applyForcesWhileMoving;
 	[SerializeField]

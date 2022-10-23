@@ -1,3 +1,3 @@
-public class OWExecuteEvents
+public static class OWExecuteEvents
 {
 }

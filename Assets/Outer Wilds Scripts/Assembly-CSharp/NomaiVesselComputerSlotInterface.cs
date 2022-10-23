@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(NomaiVesselComputer))]
 public class NomaiVesselComputerSlotInterface : MonoBehaviour
 {
 	[SerializeField]

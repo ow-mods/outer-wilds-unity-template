@@ -8,7 +8,7 @@ public class Credits : MonoBehaviour
 		Final = 1,
 		Fast = 4,
 		Krazy = 8,
-		All = 2147483647,
+		All = int.MaxValue,
 	}
 
 	public enum Platform
@@ -27,19 +27,20 @@ public class Credits : MonoBehaviour
 		Microsoft = 400,
 		Nintendo = 32,
 		PC = 6,
-		All = 2147483647,
+		All = int.MaxValue,
 	}
 
 	[SerializeField]
 	private CreditsType _type;
 	[SerializeField]
 	private CreditsAsset _creditsAsset;
+	[Space]
 	[SerializeField]
 	private AnimationCurve _fadeFromWhiteCurve;
 	[SerializeField]
 	private Image _fadeImage;
 	[SerializeField]
-	private float _whiteFadeDuration;
+	private float _whiteFadeDuration = 0.5f;
 	[SerializeField]
 	private OWAudioSource _musicSource;
 	[SerializeField]
@@ -47,9 +48,12 @@ public class Credits : MonoBehaviour
 	[SerializeField]
 	private AudioClip _previewClip;
 	[SerializeField]
+	[HideInInspector]
 	private float _totalPlayTime;
 	[SerializeField]
+	[HideInInspector]
 	private float _simulatedTimeNormalized;
 	[SerializeField]
+	[HideInInspector]
 	private Platform _simulatePlatform;
 }

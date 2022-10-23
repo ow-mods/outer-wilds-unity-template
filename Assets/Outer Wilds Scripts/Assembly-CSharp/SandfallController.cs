@@ -11,7 +11,7 @@ public class SandfallController : SectoredMonoBehaviour
 	}
 
 	[SerializeField]
-	private float _height;
+	private float _height = 20f;
 	[SerializeField]
 	private SandfallParticleSystem[] _particles;
 	[SerializeField]

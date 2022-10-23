@@ -1,3 +1,3 @@
-public class OWPhysics
+public static class OWPhysics
 {
 }

@@ -16,6 +16,7 @@ public class GhostAirlock : MonoBehaviour
 	private OWTriggerVolume _airlockVolume;
 	[SerializeField]
 	private OWTriggerVolume _interiorSectorVolume;
+	[Header("Audio")]
 	[SerializeField]
 	private AudioLoopCrossfader _lightSensorCrossfader;
 	[SerializeField]

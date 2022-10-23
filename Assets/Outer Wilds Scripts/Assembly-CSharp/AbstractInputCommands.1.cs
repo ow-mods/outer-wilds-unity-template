@@ -1,3 +1,3 @@
-public class AbstractInputCommands<T> : AbstractCommands
+public abstract class AbstractInputCommands<T> : AbstractCommands
 {
 }

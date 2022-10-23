@@ -1,17 +1,18 @@
 using UnityEngine;
 
+[RequireComponent(typeof(OWTriggerVolume))]
 public class GameObjectActivationTrigger : MonoBehaviour
 {
 	[SerializeField]
 	private bool _checkForTag;
 	[SerializeField]
-	private string _tag;
+	private string _tag = "";
 	[SerializeField]
-	private GameObject[] _gameObjects;
+	private GameObject[] _gameObjects = new GameObject[1];
 	[SerializeField]
-	private bool _fireOnEnter;
+	private bool _fireOnEnter = true;
 	[SerializeField]
-	private bool _activeOnEnter;
+	private bool _activeOnEnter = true;
 	[SerializeField]
 	private bool _fireOnExit;
 	[SerializeField]

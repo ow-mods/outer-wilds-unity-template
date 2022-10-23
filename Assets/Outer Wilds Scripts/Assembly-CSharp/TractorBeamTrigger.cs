@@ -5,5 +5,5 @@ public class TractorBeamTrigger : OWTriggerVolume
 	[SerializeField]
 	private TractorBeamController _tractorBeam;
 	[SerializeField]
-	private bool _activateBeam;
+	private bool _activateBeam = true;
 }

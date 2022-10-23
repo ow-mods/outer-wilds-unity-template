@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace TerrainBaker
 {
-	public class UVProjector : MonoBehaviour
+	public abstract class UVProjector : MonoBehaviour
 	{
 	}
 }

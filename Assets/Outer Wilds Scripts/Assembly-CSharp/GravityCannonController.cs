@@ -18,12 +18,14 @@ public class GravityCannonController : MonoBehaviour
 	private GameObject _recallProxyGeometry;
 	[SerializeField]
 	private OWTriggerVolume _platformTrigger;
+	[Space]
 	[SerializeField]
 	private OWAudioSource _ambientAudioSrc;
 	[SerializeField]
 	private OWAudioSource _oneShotAudioSrc;
 	[SerializeField]
-	private float _fadeLength;
+	private float _fadeLength = 0.5f;
+	[Space]
 	[SerializeField]
 	private NomaiComputer _nomaiComputer;
 	[SerializeField]

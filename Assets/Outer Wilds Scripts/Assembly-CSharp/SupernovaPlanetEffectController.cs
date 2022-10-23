@@ -8,16 +8,18 @@ public class SupernovaPlanetEffectController : MonoBehaviour
 	private LODGroup _atmosphere;
 	[SerializeField]
 	private PlanetaryFogController _fog;
+	[Space]
 	[SerializeField]
 	private MeshRenderer _shockLayer;
+	[ColorUsage(true, true)]
 	[SerializeField]
-	private Color _shockLayerColor;
+	private Color _shockLayerColor = Color.white;
 	[SerializeField]
-	private float _shockLayerStartRadius;
+	private float _shockLayerStartRadius = 10000f;
 	[SerializeField]
-	private float _shockLayerFullRadius;
+	private float _shockLayerFullRadius = 20000f;
 	[SerializeField]
-	private float _shockLayerTrailLength;
+	private float _shockLayerTrailLength = 100f;
 	[SerializeField]
-	private float _shockLayerTrailFlare;
+	private float _shockLayerTrailFlare = 100f;
 }

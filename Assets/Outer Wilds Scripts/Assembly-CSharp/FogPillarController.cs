@@ -3,5 +3,5 @@ using UnityEngine;
 public class FogPillarController : MonoBehaviour
 {
 	[SerializeField]
-	private bool _heads;
+	private bool _heads = true;
 }

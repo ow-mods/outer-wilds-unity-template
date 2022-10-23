@@ -11,7 +11,7 @@ public class RemoteFlightConsole : MonoBehaviour
 	[SerializeField]
 	private Transform _respawnPoint;
 	[SerializeField]
-	private float _respawnLength;
+	private float _respawnLength = 0.5f;
 	[SerializeField]
 	private SingularityWarpEffect _respawnEffect;
 	[SerializeField]

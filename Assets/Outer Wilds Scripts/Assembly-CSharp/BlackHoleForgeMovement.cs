@@ -3,7 +3,7 @@ using UnityEngine;
 public class BlackHoleForgeMovement : MonoBehaviour
 {
 	[SerializeField]
-	private float _movingLength;
+	private float _movingLength = 5f;
 	[SerializeField]
 	private GameObject _lowerPosition;
 	[SerializeField]
@@ -17,15 +17,15 @@ public class BlackHoleForgeMovement : MonoBehaviour
 	[SerializeField]
 	private float _highPositionOffset;
 	[SerializeField]
-	private AnimationCurve _movingCurve;
+	private AnimationCurve _movingCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
 	[SerializeField]
-	private AnimationCurve _rotationCurve;
+	private AnimationCurve _rotationCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
 	[SerializeField]
-	private NomaiInterfaceSlot[] _lowerSwitches;
+	private NomaiInterfaceSlot[] _lowerSwitches = new NomaiInterfaceSlot[0];
 	[SerializeField]
-	private NomaiInterfaceSlot[] _middleSwitches;
+	private NomaiInterfaceSlot[] _middleSwitches = new NomaiInterfaceSlot[0];
 	[SerializeField]
-	private NomaiInterfaceSlot[] _higherSwitches;
+	private NomaiInterfaceSlot[] _higherSwitches = new NomaiInterfaceSlot[0];
 	[SerializeField]
 	private float _lowerRotation;
 	[SerializeField]

@@ -14,7 +14,7 @@ public class NomaiTranslatorProp : MonoBehaviour
 	[SerializeField]
 	private Font _defaultPropFontDynamic;
 	[SerializeField]
-	private float _defaultFontSpacing;
+	private float _defaultFontSpacing = 0.7f;
 	[SerializeField]
 	private Text _textField;
 	[SerializeField]

@@ -10,5 +10,5 @@ public class PauseUI : MonoBehaviour
 	[SerializeField]
 	private Image _readingVignette;
 	[SerializeField]
-	private float _vignetteFadeSpeed;
+	private float _vignetteFadeSpeed = 1f;
 }

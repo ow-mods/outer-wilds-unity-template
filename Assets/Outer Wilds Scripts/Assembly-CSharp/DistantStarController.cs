@@ -6,11 +6,7 @@ public class DistantStarController : MonoBehaviour
 	[Serializable]
 	private class ExplosionCurve
 	{
-		private ExplosionCurve()
-		{
-		}
-
-		public AnimationCurve explosionsByTime;
+		public AnimationCurve explosionsByTime = new AnimationCurve();
 	}
 
 	[SerializeField]

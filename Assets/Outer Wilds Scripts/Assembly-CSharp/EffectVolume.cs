@@ -1,5 +1,5 @@
 using UnityEngine;
 
-public class EffectVolume : MonoBehaviour
+public abstract class EffectVolume : MonoBehaviour
 {
 }

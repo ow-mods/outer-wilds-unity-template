@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+[SelectionBase]
 public class ShipLogEntryCard : MonoBehaviour
 {
 	[SerializeField]

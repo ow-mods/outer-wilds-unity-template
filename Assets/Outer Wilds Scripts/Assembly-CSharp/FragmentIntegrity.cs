@@ -4,19 +4,19 @@ using System.Collections.Generic;
 public class FragmentIntegrity : MonoBehaviour
 {
 	[SerializeField]
-	protected float _integrity;
+	protected float _integrity = 20f;
 	[SerializeField]
-	private float _randomIntegrityRange;
+	private float _randomIntegrityRange = 5f;
 	[SerializeField]
-	protected float _damageMultiplier;
+	protected float _damageMultiplier = 1f;
 	[SerializeField]
-	private float _minImpactMass;
+	private float _minImpactMass = 0.01f;
 	[SerializeField]
-	private float _maxImpactMass;
+	private float _maxImpactMass = 1f;
 	[SerializeField]
-	private float _minImpactSpeed;
+	private float _minImpactSpeed = 10f;
 	[SerializeField]
-	private float _maxImpactSpeed;
+	private float _maxImpactSpeed = 100f;
 	[SerializeField]
 	private List<FragmentIntegrity> _childFragmentList;
 	[SerializeField]

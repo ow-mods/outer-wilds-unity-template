@@ -1,3 +1,3 @@
-public class IRaycastInteractable
+public interface IRaycastInteractable
 {
 }

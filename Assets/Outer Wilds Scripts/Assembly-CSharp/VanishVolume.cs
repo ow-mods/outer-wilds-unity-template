@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Collider))]
 public class VanishVolume : MonoBehaviour
 {
 	[SerializeField]
@@ -7,5 +8,5 @@ public class VanishVolume : MonoBehaviour
 	[SerializeField]
 	private bool _onlyAffectsPlayerAndShip;
 	[SerializeField]
-	private bool _shrinkBodies;
+	private bool _shrinkBodies = true;
 }

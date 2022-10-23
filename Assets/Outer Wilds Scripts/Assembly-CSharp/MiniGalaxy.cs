@@ -15,7 +15,7 @@ public class MiniGalaxy : MonoBehaviour
 	[SerializeField]
 	private OWAudioSource _audioSource;
 	[SerializeField]
-	private bool _randomRotation;
+	private bool _randomRotation = true;
 	[SerializeField]
-	private float _expandedLightRange;
+	private float _expandedLightRange = 40f;
 }

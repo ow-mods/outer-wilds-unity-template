@@ -5,5 +5,5 @@ public class DarkMatterBubbleController : MonoBehaviour
 	[SerializeField]
 	private HazardDetector _hazardDetector;
 	[SerializeField]
-	private float _fadeLength;
+	private float _fadeLength = 1f;
 }

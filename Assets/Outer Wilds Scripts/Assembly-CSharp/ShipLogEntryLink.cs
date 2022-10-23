@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+[SelectionBase]
 public class ShipLogEntryLink : MonoBehaviour
 {
 	[SerializeField]

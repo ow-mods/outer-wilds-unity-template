@@ -3,8 +3,9 @@ using System;
 [Serializable]
 public class GamePadConfig
 {
-	public GamePadConfig(InputUtil.GamePadPresetConfig configType)
+	public GamePadConfig(InputUtil.GamePadPresetConfig configType = InputUtil.GamePadPresetConfig.NONE)
 	{
+		buttonPromptType = InputUtil.ButtonPromptPresetConfig.NONE;
 	}
 
 	public string gamepadHardwareName;

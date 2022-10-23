@@ -12,8 +12,8 @@ public class SplashEffect
 	}
 
 	public FluidVolume.Type fluidType;
-	public float minImpactSpeed;
-	public TriggerEvent triggerEvent;
+	public float minImpactSpeed = 15f;
+	public TriggerEvent triggerEvent = TriggerEvent.OnEntry;
 	public GameObject splashPrefab;
 	public bool ignoreSphereAligment;
 }

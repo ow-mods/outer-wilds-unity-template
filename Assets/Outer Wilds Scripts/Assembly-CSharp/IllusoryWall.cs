@@ -11,5 +11,5 @@ public class IllusoryWall : MonoBehaviour
 	[SerializeField]
 	private OWAudioSource _oneShotSource;
 	[SerializeField]
-	private bool _toggleShadowCasting;
+	private bool _toggleShadowCasting = true;
 }

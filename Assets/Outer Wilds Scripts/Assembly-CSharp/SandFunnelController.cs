@@ -3,9 +3,10 @@ using UnityEngine;
 public class SandFunnelController : MonoBehaviour
 {
 	[SerializeField]
-	private float _growAfterMinutes;
+	private float _growAfterMinutes = 1f;
 	[SerializeField]
-	private float _shrinkAfterMinutes;
+	private float _shrinkAfterMinutes = 16f;
+	[Space]
 	[SerializeField]
 	private Transform _scaleRoot;
 	[SerializeField]
@@ -20,6 +21,7 @@ public class SandFunnelController : MonoBehaviour
 	private Transform _towerTwinEffectsRoot;
 	[SerializeField]
 	private OWAudioSource[] _audioSources;
+	[Space]
 	[SerializeField]
 	private OWTriggerVolume _lakebedCaveVolume;
 	[SerializeField]

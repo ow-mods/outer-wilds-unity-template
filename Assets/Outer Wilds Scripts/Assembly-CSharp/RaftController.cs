@@ -8,10 +8,12 @@ public class RaftController : MonoBehaviour
 	private RingRiverFluidVolume _riverFluid;
 	[SerializeField]
 	private bool _debug;
+	[Space]
 	[SerializeField]
-	private float _acceleration;
+	private float _acceleration = 5f;
 	[SerializeField]
 	private LightSensor[] _lightSensors;
+	[Space]
 	[SerializeField]
 	private Shape _detectorShape;
 	[SerializeField]
@@ -22,8 +24,9 @@ public class RaftController : MonoBehaviour
 	private OWTriggerVolume _rideVolume;
 	[SerializeField]
 	private OWAudioSource _oneShotAudio;
+	[Space]
 	[SerializeField]
-	private OWCollider[] _railingColliders;
+	private OWCollider[] _railingColliders = new OWCollider[0];
 	[SerializeField]
 	private Animator _railingAnimator;
 	[SerializeField]

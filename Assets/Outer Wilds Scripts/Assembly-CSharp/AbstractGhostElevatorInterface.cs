@@ -1,5 +1,5 @@
 using UnityEngine;
 
-public class AbstractGhostElevatorInterface : MonoBehaviour
+public abstract class AbstractGhostElevatorInterface : MonoBehaviour
 {
 }

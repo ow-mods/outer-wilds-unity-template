@@ -1,5 +1,5 @@
 using UnityEngine;
 
-public class SelectEffect : MonoBehaviour
+public abstract class SelectEffect : MonoBehaviour
 {
 }

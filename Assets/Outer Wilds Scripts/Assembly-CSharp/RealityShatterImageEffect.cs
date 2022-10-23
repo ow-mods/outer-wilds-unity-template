@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[ImageEffectAllowedInSceneView]
 public class RealityShatterImageEffect : MonoBehaviour
 {
 	[SerializeField]

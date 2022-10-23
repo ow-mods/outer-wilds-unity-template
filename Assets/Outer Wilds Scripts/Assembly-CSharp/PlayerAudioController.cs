@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerAudioController : MonoBehaviour
 {
+	[Space(10f)]
 	[SerializeField]
 	private OWAudioSource _oneShotSource;
 	[SerializeField]

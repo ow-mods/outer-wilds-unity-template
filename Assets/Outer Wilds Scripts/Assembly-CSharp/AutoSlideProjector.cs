@@ -13,7 +13,8 @@ public class AutoSlideProjector : SectoredMonoBehaviour
 	[SerializeField]
 	private OWLight2 _bounceLight;
 	[SerializeField]
-	private OWRenderer[] _lightShaftRenderers;
+	private OWRenderer[] _lightShaftRenderers = new OWRenderer[0];
+	[Space]
 	[SerializeField]
 	private OWAudioSource _oneShotAudio;
 }

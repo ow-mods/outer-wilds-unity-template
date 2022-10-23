@@ -7,23 +7,26 @@ public class RotatingDoor : AbstractDoor
 	[SerializeField]
 	private Transform[] _doorPannelLeft;
 	[SerializeField]
-	private float _openRotation;
+	private float _openRotation = 90f;
+	[Space]
 	[SerializeField]
-	private float _openingSpeed;
+	private float _openingSpeed = 60f;
 	[SerializeField]
-	private float _closingSpeed;
+	private float _closingSpeed = 60f;
+	[Header("Audio")]
 	[SerializeField]
 	private OWAudioSource _loopingAudio;
 	[SerializeField]
 	private OWAudioSource _oneShotAudio;
 	[SerializeField]
-	private AudioType _openStartClip;
+	private AudioType _openStartClip = AudioType.Door_OpenStart;
 	[SerializeField]
-	private AudioType _openStopClip;
+	private AudioType _openStopClip = AudioType.Door_OpenStop;
 	[SerializeField]
-	private AudioType _closeStartClip;
+	private AudioType _closeStartClip = AudioType.Door_CloseStart;
 	[SerializeField]
-	private AudioType _closeStopClip;
+	private AudioType _closeStopClip = AudioType.Door_CloseStop;
+	[Header("Occlusion")]
 	[SerializeField]
 	private VolumeOcclusionLight _occlusionLight;
 }

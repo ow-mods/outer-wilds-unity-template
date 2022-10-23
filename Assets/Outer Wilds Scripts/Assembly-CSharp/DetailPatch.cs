@@ -1,5 +1,7 @@
 using UnityEngine;
 
+[RequireComponent(typeof(MeshRenderer))]
+[RequireComponent(typeof(MeshFilter))]
 public class DetailPatch : MonoBehaviour
 {
 	public enum Mode
@@ -20,27 +22,27 @@ public class DetailPatch : MonoBehaviour
 	[SerializeField]
 	private Mode _mode;
 	[SerializeField]
-	private GameObject[] _targets;
+	private GameObject[] _targets = new GameObject[0];
 	[SerializeField]
-	private bool _blockable;
+	private bool _blockable = true;
 	[SerializeField]
 	private Shape _shape;
 	[SerializeField]
-	private Vector2 _size;
+	private Vector2 _size = Vector2.one;
 	[SerializeField]
-	private float _distance;
+	private float _distance = 1f;
 	[SerializeField]
 	private int _seed;
 	[SerializeField]
-	private int _count;
+	private int _count = 10;
 	[SerializeField]
-	private bool _separation;
+	private bool _separation = true;
 	[SerializeField]
-	private AnimationCurve _distribution;
+	private AnimationCurve _distribution = AnimationCurve.Linear(0f, 0f, 1f, 1f);
 	[SerializeField]
-	private DetailInstance[] _instances;
+	private DetailInstance[] _instances = new DetailInstance[0];
 	[SerializeField]
 	private Mesh _mesh;
 	[SerializeField]
-	private Material[] _materials;
+	private Material[] _materials = new Material[0];
 }

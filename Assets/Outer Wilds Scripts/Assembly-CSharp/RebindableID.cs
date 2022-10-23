@@ -44,5 +44,5 @@ public enum RebindableID
 	TOOL_UP = 5039,
 	TOOL_DOWN = 5040,
 	TOOL_RIGHT = 5041,
-	TOOL_LEFT = 5042,
+	TOOL_LEFT = 5042
 }

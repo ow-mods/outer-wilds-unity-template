@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[AddComponentMenu("Sectors/Sector Lights LOD Group", 400)]
 public class SectorLightsLODGroup : LightsCullGroup
 {
 	[SerializeField]
@@ -7,5 +8,5 @@ public class SectorLightsLODGroup : LightsCullGroup
 	[SerializeField]
 	private Sector _sectorWhereActive;
 	[SerializeField]
-	private float _fadeLength;
+	private float _fadeLength = 1f;
 }

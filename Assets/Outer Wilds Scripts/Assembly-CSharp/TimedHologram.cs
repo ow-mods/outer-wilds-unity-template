@@ -3,5 +3,5 @@ using UnityEngine;
 public class TimedHologram : Hologram
 {
 	[SerializeField]
-	private float _hologramDuration;
+	private float _hologramDuration = 10f;
 }

@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class EyeTombController : MonoBehaviour
 {
+	[Header("Stage")]
 	[SerializeField]
 	private ObserveTrigger _graveObserveTrigger;
 	[SerializeField]
@@ -10,6 +11,7 @@ public class EyeTombController : MonoBehaviour
 	private OWTriggerVolume _stageVolume;
 	[SerializeField]
 	private OWLightController _candleController;
+	[Header("Interface")]
 	[SerializeField]
 	private InteractReceiver _interactReceiver;
 	[SerializeField]
@@ -18,6 +20,7 @@ public class EyeTombController : MonoBehaviour
 	private OWAudioSource _oneShotSource;
 	[SerializeField]
 	private Transform _lockOnTransform;
+	[Header("Projection")]
 	[SerializeField]
 	private OWLightController _planetLightController;
 	[SerializeField]
@@ -28,10 +31,12 @@ public class EyeTombController : MonoBehaviour
 	private GameObject _stateRoot;
 	[SerializeField]
 	private GameObject[] _states;
+	[Header("Signal")]
 	[SerializeField]
 	private AudioSignal _buriedSignal;
 	[SerializeField]
 	private Transform _signalDeepSocket;
+	[Header("Instrument")]
 	[SerializeField]
 	private QuantumInstrument _instrument;
 	[SerializeField]

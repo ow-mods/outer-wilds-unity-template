@@ -25,5 +25,5 @@ public class ItemTool : PlayerTool
 	[SerializeField]
 	private float _dropDistanceInFront;
 	[SerializeField]
-	private float _maxDroppableSlopeAngle;
+	private float _maxDroppableSlopeAngle = 30f;
 }

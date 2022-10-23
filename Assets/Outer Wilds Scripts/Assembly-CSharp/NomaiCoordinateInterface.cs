@@ -6,6 +6,7 @@ public class NomaiCoordinateInterface : MonoBehaviour
 	private OWAudioSource _oneShotSource;
 	[SerializeField]
 	private OWAudioSource _loopingSource;
+	[Space]
 	[SerializeField]
 	private Transform _basePivot;
 	[SerializeField]

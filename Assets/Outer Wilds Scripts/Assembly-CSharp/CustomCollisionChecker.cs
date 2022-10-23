@@ -1,5 +1,5 @@
 using UnityEngine;
 
-public class CustomCollisionChecker : MonoBehaviour
+public abstract class CustomCollisionChecker : MonoBehaviour
 {
 }

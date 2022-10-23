@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[AddComponentMenu("Audio/Audio Manager", 200)]
 public class AudioManager : MonoBehaviour
 {
 	[SerializeField]

@@ -3,6 +3,9 @@ using UnityEngine;
 public class TitleScreenAnimation : MonoBehaviour
 {
 	[SerializeField]
+	private TitleCodeInputManager _titleCodeInputManager;
+	[Space(10f)]
+	[SerializeField]
 	private OWCamera _camera;
 	[SerializeField]
 	private Campfire _campfire;

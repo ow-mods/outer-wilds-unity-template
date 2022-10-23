@@ -1,5 +1,7 @@
 using UnityEngine;
 
+[RequireComponent(typeof(MeshRenderer))]
+[RequireComponent(typeof(MeshFilter))]
 public class MeshProjector : MonoBehaviour
 {
 	public enum Mode
@@ -16,19 +18,19 @@ public class MeshProjector : MonoBehaviour
 	[SerializeField]
 	private Mode _mode;
 	[SerializeField]
-	private GameObject[] _targets;
+	private GameObject[] _targets = new GameObject[0];
 	[SerializeField]
-	private Vector2 _size;
+	private Vector2 _size = Vector2.one;
 	[SerializeField]
-	private float _distance;
+	private float _distance = 1f;
 	[SerializeField]
-	private Vector2 _uvMin;
+	private Vector2 _uvMin = Vector2.zero;
 	[SerializeField]
-	private Vector2 _uvMax;
+	private Vector2 _uvMax = Vector2.one;
 	[SerializeField]
-	private Color _color;
+	private Color _color = Color.white;
 	[SerializeField]
-	private Vector2 _angleFade;
+	private Vector2 _angleFade = new Vector2(45f, 90f);
 	[SerializeField]
 	private bool _inheritVertexColors;
 	[SerializeField]

@@ -1,3 +1,3 @@
-public class IPermanentManagerWorker
+public interface IPermanentManagerWorker
 {
 }

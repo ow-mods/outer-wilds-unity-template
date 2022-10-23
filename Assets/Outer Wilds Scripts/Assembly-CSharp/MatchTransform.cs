@@ -5,7 +5,7 @@ public class MatchTransform : MonoBehaviour
 	[SerializeField]
 	private Transform _targetTransform;
 	[SerializeField]
-	private bool _matchPosition;
+	private bool _matchPosition = true;
 	[SerializeField]
 	private bool _matchRotation;
 	[SerializeField]

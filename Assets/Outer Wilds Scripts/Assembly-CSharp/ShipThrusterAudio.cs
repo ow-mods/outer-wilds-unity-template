@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class ShipThrusterAudio : ThrusterAudio
 {
+	[Space]
 	[SerializeField]
 	private OWAudioSource _ignitionSource;
 	[SerializeField]
@@ -14,6 +15,7 @@ public class ShipThrusterAudio : ThrusterAudio
 	private OWAudioSource _leftUnderwaterSource;
 	[SerializeField]
 	private AnimationCurve _thrustToVolumeCurve;
+	[Space]
 	[SerializeField]
 	private AudioLowPassFilter _rotationalSourceLowpass;
 }

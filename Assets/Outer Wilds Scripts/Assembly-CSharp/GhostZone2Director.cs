@@ -12,18 +12,26 @@ public class GhostZone2Director : GhostDirector
 		public bool cityDestination;
 	}
 
+	[Space]
 	[SerializeField]
 	private DreamObjectProjector _lightsProjector;
+	[SerializeField]
+	private DreamObjectProjector _raftProjector;
 	[SerializeField]
 	private OWAudioSource _ghostHowlAudioSource;
 	[SerializeField]
 	private OWTriggerVolume _undergroundVolume;
 	[SerializeField]
-	private GhostBrain[] _cityGhosts;
+	private OWTriggerVolume _raftDockVolume;
 	[SerializeField]
-	private GhostBrain[] _undergroundGhosts;
+	private OWTriggerVolume _upperTowerEscapeVolume;
+	[Space]
 	[SerializeField]
-	private ElevatorPair[] _elevators;
+	private GhostBrain[] _cityGhosts = new GhostBrain[0];
+	[SerializeField]
+	private GhostBrain[] _undergroundGhosts = new GhostBrain[0];
+	[SerializeField]
+	private ElevatorPair[] _elevators = new ElevatorPair[0];
 	[SerializeField]
 	private GhostNodeMap _cityNodeMap;
 	[SerializeField]

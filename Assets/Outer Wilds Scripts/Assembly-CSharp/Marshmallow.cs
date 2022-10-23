@@ -2,6 +2,14 @@ using UnityEngine;
 
 public class Marshmallow : MonoBehaviour
 {
+	public enum MallowState
+	{
+		Default,
+		Burning,
+		Shriveling,
+		Gone
+	}
+
 	[SerializeField]
 	private MeshRenderer _fireRenderer;
 	[SerializeField]

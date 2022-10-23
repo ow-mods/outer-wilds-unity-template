@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class UIStyleManager : MonoBehaviour
 {
+	[Header("Menu")]
 	[SerializeField]
 	private Font _menuFont;
 	[SerializeField]
@@ -14,8 +15,10 @@ public class UIStyleManager : MonoBehaviour
 	private Font _ruMenuFont;
 	[SerializeField]
 	private float _defaultLetterSpacing;
+	[Space]
 	[SerializeField]
 	private Color _popupBlockerColor;
+	[Space]
 	[SerializeField]
 	private Color _menuForegroundColorNormal;
 	[SerializeField]
@@ -26,6 +29,7 @@ public class UIStyleManager : MonoBehaviour
 	private Color _menuForegroundColorPressed;
 	[SerializeField]
 	private Color _menuForegroundColorDisabled;
+	[Space]
 	[SerializeField]
 	private Color _menuBackgroundColorNormal;
 	[SerializeField]
@@ -36,6 +40,7 @@ public class UIStyleManager : MonoBehaviour
 	private Color _menuBackgroundColorPressed;
 	[SerializeField]
 	private Color _menuBackgroundColorDisabled;
+	[Space]
 	[SerializeField]
 	private Color _menuSecondaryForegroundColorNormal;
 	[SerializeField]
@@ -46,6 +51,7 @@ public class UIStyleManager : MonoBehaviour
 	private Color _menuSecondaryForegroundColorPressed;
 	[SerializeField]
 	private Color _menuSecondaryForegroundColorDisabled;
+	[Space]
 	[SerializeField]
 	private Color _menuSecondaryBackgroundColorNormal;
 	[SerializeField]
@@ -56,6 +62,7 @@ public class UIStyleManager : MonoBehaviour
 	private Color _menuSecondaryBackgroundColorPressed;
 	[SerializeField]
 	private Color _menuSecondaryBackgroundColorDisabled;
+	[Space]
 	[SerializeField]
 	private Color _menuButtonForegroundColorNormal;
 	[SerializeField]
@@ -66,6 +73,7 @@ public class UIStyleManager : MonoBehaviour
 	private Color _menuButtonForegroundColorPressed;
 	[SerializeField]
 	private Color _menuButtonForegroundColorDisabled;
+	[Space]
 	[SerializeField]
 	private Color _menuButtonBackgroundColorNormal;
 	[SerializeField]
@@ -76,6 +84,8 @@ public class UIStyleManager : MonoBehaviour
 	private Color _menuButtonBackgroundColorPressed;
 	[SerializeField]
 	private Color _menuButtonBackgroundColorDisabled;
+	[Space]
+	[Header("Preflight")]
 	[SerializeField]
 	private Color _menuPreflightColorNormal;
 	[SerializeField]
@@ -86,12 +96,16 @@ public class UIStyleManager : MonoBehaviour
 	private Color _menuPreflightColorPressed;
 	[SerializeField]
 	private Color _menuPreflightColorDisabled;
+	[Space]
+	[Header("Translator")]
 	[SerializeField]
 	private Font _translatorFont;
 	[SerializeField]
 	private Color _primaryHighlightColor;
 	[SerializeField]
 	private Color _secondaryHighlightColor;
+	[Space]
+	[Header("Ship Log")]
 	[SerializeField]
 	private Font _shipLogFont;
 	[SerializeField]
@@ -100,6 +114,7 @@ public class UIStyleManager : MonoBehaviour
 	private Color _shipLogRumorColor;
 	[SerializeField]
 	private Color _shipLogSelectionColor;
+	[Space]
 	[SerializeField]
 	private Color _neutralColor;
 	[SerializeField]

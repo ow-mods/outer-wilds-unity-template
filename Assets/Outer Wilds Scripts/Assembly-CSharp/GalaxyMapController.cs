@@ -26,20 +26,22 @@ public class GalaxyMapController : MonoBehaviour
 	private EndlessTriggerVolume _endlessObservatoryVolume;
 	[SerializeField]
 	private OWTriggerVolume _forestOfGalaxiesVolume;
+	[Space]
 	[SerializeField]
 	private GameObject _supernovaPrefab;
 	[SerializeField]
 	private Shape _supernovaSpawnShape;
 	[SerializeField]
-	private float _supernovaSpawnRate;
+	private float _supernovaSpawnRate = 10f;
 	[SerializeField]
-	private int _maxSupernovaCount;
+	private int _maxSupernovaCount = 100;
 	[SerializeField]
-	private float _supernovaSpeed;
+	private float _supernovaSpeed = 200f;
+	[Space]
 	[SerializeField]
 	private ParticleSystem[] _starParticles;
 	[SerializeField]
-	private float _starParticleDelay;
+	private float _starParticleDelay = 1f;
 	[SerializeField]
-	private float _exitGalaxyDelay;
+	private float _exitGalaxyDelay = 4f;
 }

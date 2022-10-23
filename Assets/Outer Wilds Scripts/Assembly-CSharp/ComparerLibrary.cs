@@ -1,3 +1,3 @@
-public class ComparerLibrary
+public static class ComparerLibrary
 {
 }

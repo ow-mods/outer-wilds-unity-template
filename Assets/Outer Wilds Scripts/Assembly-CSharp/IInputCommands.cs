@@ -1,3 +1,3 @@
-public class IInputCommands
+public interface IInputCommands
 {
 }

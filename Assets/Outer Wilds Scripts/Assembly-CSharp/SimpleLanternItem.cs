@@ -9,7 +9,7 @@ public class SimpleLanternItem : OWItem
 	[SerializeField]
 	private CustomCollisionChecker _collisionChecker;
 	[SerializeField]
-	private bool _startsLit;
+	private bool _startsLit = true;
 	[SerializeField]
 	private TransformAnimator _animator;
 	[SerializeField]
