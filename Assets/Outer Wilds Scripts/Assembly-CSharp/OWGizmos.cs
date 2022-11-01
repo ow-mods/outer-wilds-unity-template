@@ -7,12 +7,20 @@ public static class OWGizmos
 {
 	public static bool IsDirectlySelected(GameObject gameObject)
 	{
+		#if UNITY_EDITOR
 		return Selection.gameObjects.Contains(gameObject);
+		#else
+		return false;
+		#endif
 	}
 
 	public static bool SelectionContainsComponentOfType<T>(bool includeInactive = false)
 	{
+		#if UNITY_EDITOR
 		return Selection.gameObjects.Any(gameObject => gameObject.GetComponentsInChildren<T>(includeInactive).Any());
+		#else
+		return false;
+		#endif
 	}
 
 	public static void DrawWireArc(Vector3 center, Vector3 normal, Vector3 from, float angle, float radius)
