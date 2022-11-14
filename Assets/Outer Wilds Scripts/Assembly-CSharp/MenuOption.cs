@@ -16,14 +16,21 @@ public class MenuOption : MonoBehaviour
 	[SerializeField]
 	protected string _overrideTooltipText;
 	[Space(10f)]
+	[FormerlySerializedAs("_enableXbox")]
 	[SerializeField]
-	private bool _enableXbox;
+	private bool _enableXboxOne = true;
 	[SerializeField]
-	private bool _enablePS4;
+	private bool _enableXboxSeriesSX = true;
 	[SerializeField]
-	private bool _enablePC;
+	private bool _enablePS4 = true;
 	[SerializeField]
-	private bool _enableInGame;
+	private bool _enablePS5 = true;
+	[SerializeField]
+	private bool _enableSwitch = true;
+	[SerializeField]
+	private bool _enablePC = true;
+	[SerializeField]
+	private bool _enableInGame = true;
 	[SerializeField]
 	private bool _dlcOnly;
 	[SerializeField]
