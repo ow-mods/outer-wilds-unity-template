@@ -2,16 +2,16 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!30 &1
 GraphicsSettings:
-  m_ObjectHideFlags: 0
   serializedVersion: 13
+  m_ObjectHideFlags: 0
   m_Deferred:
-    m_Mode: 1
+    m_Mode: 2
     m_Shader: {fileID: 69, guid: 0000000000000000f000000000000000, type: 0}
   m_DeferredReflections:
-    m_Mode: 1
-    m_Shader: {fileID: 74, guid: 0000000000000000f000000000000000, type: 0}
+    m_Mode: 0
+    m_Shader: {fileID: 0}
   m_ScreenSpaceShadows:
-    m_Mode: 1
+    m_Mode: 2
     m_Shader: {fileID: 64, guid: 0000000000000000f000000000000000, type: 0}
   m_LegacyDeferred:
     m_Mode: 1
@@ -20,8 +20,8 @@ GraphicsSettings:
     m_Mode: 1
     m_Shader: {fileID: 62, guid: 0000000000000000f000000000000000, type: 0}
   m_MotionVectors:
-    m_Mode: 1
-    m_Shader: {fileID: 75, guid: 0000000000000000f000000000000000, type: 0}
+    m_Mode: 0
+    m_Shader: {fileID: 0}
   m_LightHalo:
     m_Mode: 1
     m_Shader: {fileID: 105, guid: 0000000000000000f000000000000000, type: 0}
@@ -29,12 +29,46 @@ GraphicsSettings:
     m_Mode: 1
     m_Shader: {fileID: 102, guid: 0000000000000000f000000000000000, type: 0}
   m_AlwaysIncludedShaders:
+  - {fileID: 7, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 15104, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 15105, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 15106, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10770, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10782, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 4800000, guid: ce39b35d7e478764dbe73206a9bdb8c1, type: 2}
   - {fileID: 16000, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 17000, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 4800000, guid: 9529aeffde9e52f4c883efa5ee779a5d, type: 2}
+  - {fileID: 4800000, guid: 85118a035da166b4988df92d2b19a0ec, type: 2}
+  - {fileID: 4800000, guid: 82a81df4645efa34e979a283bdf78742, type: 2}
+  - {fileID: 4800000, guid: 072b4b68f85c69149b94ad8cf8272339, type: 2}
   - {fileID: 16001, guid: 0000000000000000f000000000000000, type: 0}
-  m_PreloadedShaders: []
-  m_SpritesDefaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000,
-    type: 0}
+  - {fileID: 19, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 65, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 66, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 67, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 109, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 110, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 107, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 9000, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 9001, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 9002, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 9003, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 9004, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 9007, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 9005, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 9006, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 68, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10757, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 15309, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 15308, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 19011, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 15304, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 15312, guid: 0000000000000000f000000000000000, type: 0}
+  m_PreloadedShaders:
+  - {fileID: 20000000, guid: c453d9f8203023342a65b95704000cb5, type: 2}
+  - {fileID: 20000000, guid: 888775a8928d1054180d1f59bf1e562f, type: 2}
+  m_SpritesDefaultMaterial: {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
   m_CustomRenderPipeline: {fileID: 0}
   m_TransparencySortMode: 0
   m_TransparencySortAxis: {x: 0, y: 0, z: 1}

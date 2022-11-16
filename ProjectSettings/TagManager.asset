@@ -3,7 +3,45 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Sun
+  - LandingCamera
+  - Root
+  - ProbeCamera
+  - MapCamera
+  - FlashbackCamera
+  - Ship
+  - PlayerDetector
+  - ProbeDetector
+  - VFog
+  - Probe
+  - PlayerCameraDetector
+  - ShipDetector
+  - EditorGameObject
+  - ModelShipDetector
+  - ShipComputer
+  - Minimap
+  - Global
+  - DialogueGui
+  - ScreenPromptUI
+  - MarkerManager
+  - FarCamera
+  - Skybox
+  - Island
+  - GhostDetector
+  - CoreMenuButton
+  - DynamicPropDetector
+  - ModelRocketShipBody
+  - NomaiShuttleBody
+  - ShipCockpit
+  - ShuttleDetector
+  - RisingSand
+  - DetachedFragment
+  - RaftDetector
+  - IgnoredByGhostMap
+  - PrisonerDetector
+  - Raft
+  - DreamLanternDetector
   layers:
   - Default
   - TransparentFX
@@ -18,26 +56,29 @@ TagManager:
   - ShipInterior
   - HelmetUVPass
   - UNUSED
-  - "AdvancedDetector\t"
+  - AdvancedDetector
   - Primitive
-  - 'IgnoreSun '
-  - 'AdvancedEffectVolume '
-  - "BasicEffectVolume\t"
+  - IgnoreSun
+  - AdvancedEffectVolume
+  - BasicEffectVolume
   - ProxyPrimitive
-  - "ReferenceFrameVolume\t"
-  - "BasicDetector\t"
-  - "Interactible\t"
+  - ReferenceFrameVolume
+  - BasicDetector
+  - Interactible
   - VisibleToProbe
   - HeadsUpDisplay
   - CloseRangeRFVolume
-  - "ProxyPrimitive2\t"
+  - ProxyPrimitive2
   - PhysicalDetector
-  - "VisibleToPlayer\t"
-  - "DreamSimulation\t"
+  - VisibleToPlayer
+  - DreamSimulation
   - Skybox
-  - "IgnoreOrbRaycast\t"
-  - "Flashback\t"
+  - IgnoreOrbRaycast
+  - Flashback
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Comet
+    uniqueID: 1523170787
     locked: 0
