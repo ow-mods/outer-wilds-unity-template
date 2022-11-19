@@ -1,5 +1,6 @@
 ﻿//Most of this is stolen from the default Unity Camera Controller, I added some features and did some other cleanup.
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class NoclipCameraController : MonoBehaviour
     {
@@ -81,27 +82,27 @@ public class NoclipCameraController : MonoBehaviour
         Vector3 GetInputTranslationDirection()
         {
             Vector3 direction = new Vector3();
-            if (Input.GetKey(KeyCode.W))
+            if (Keyboard.current.wKey.isPressed)
             {
                 direction += Vector3.forward;
             }
-            if (Input.GetKey(KeyCode.S))
+            if (Keyboard.current.sKey.isPressed)
             {
                 direction += Vector3.back;
             }
-            if (Input.GetKey(KeyCode.A))
+            if (Keyboard.current.aKey.isPressed)
             {
                 direction += Vector3.left;
             }
-            if (Input.GetKey(KeyCode.D))
+            if (Keyboard.current.dKey.isPressed)
             {
                 direction += Vector3.right;
             }
-            if (Input.GetKey(KeyCode.Q))
+            if (Keyboard.current.qKey.isPressed)
             {
                 direction += Vector3.down;
             }
-            if (Input.GetKey(KeyCode.E))
+            if (Keyboard.current.eKey.isPressed)
             {
                 direction += Vector3.up;
             }
@@ -112,7 +113,7 @@ public class NoclipCameraController : MonoBehaviour
         {
 
             // Application quitting
-            if (Input.GetKey(KeyCode.Escape) && EscapeClosesApp)
+            if (Keyboard.current.escapeKey.isPressed && EscapeClosesApp)
             {
                 Application.Quit();
 				#if UNITY_EDITOR
@@ -121,22 +122,22 @@ public class NoclipCameraController : MonoBehaviour
             }
 
             // Cursor locking
-            if (Input.GetMouseButtonDown(1))
+            if (Mouse.current.leftButton.wasPressedThisFrame)
             {
                 Cursor.lockState = CursorLockMode.Locked;
             }
 
             // Cursor Unlocking
-            if (Input.GetMouseButtonUp(1))
+            if (Mouse.current.leftButton.wasReleasedThisFrame)
             {
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
             }
 
             // Rotation
-            if (Input.GetMouseButton(1))
+            if (Mouse.current.leftButton.isPressed)
             {
-                var mouseMovement = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y") * (invertY ? 1 : -1));
+                var mouseMovement = new Vector2(Mouse.current.delta.x.ReadValue(), Mouse.current.delta.y.ReadValue() * (invertY ? 1 : -1)) * Time.smoothDeltaTime * 10;
                 
                 var mouseSensitivityFactor = mouseSensitivityCurve.Evaluate(mouseMovement.magnitude);
 
@@ -148,13 +149,13 @@ public class NoclipCameraController : MonoBehaviour
             var translation = GetInputTranslationDirection() * Time.deltaTime;
 
             // Shift-sprint thingy
-            if (Input.GetKey(KeyCode.LeftShift))
+            if (Keyboard.current.leftShiftKey.isPressed)
             {
                 translation *= 8.0f;
             }
             
 
-            speed += Input.mouseScrollDelta.y * 0.2f;
+            speed += Mouse.current.scroll.y.ReadValue() * 0.2f;
             translation *= Mathf.Pow(2.0f, speed);
 
             m_TargetCameraState.Translate(translation);
