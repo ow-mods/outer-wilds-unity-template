@@ -7,7 +7,6 @@ Newer versions will not work, as AssetBundles are not forward-compatible.
 ### How to use
 
 1. Clone the template and load it into Unity with **2019.4.39f1**
-2. Open the *Project Settings*, change paths and options as required
-3. Build your content (usually into a prefab) and label it to be build into an AssetBundle.
-4. In the top bar, go *Assets > Build AssetBundles*
-5. All AssetBundles will get built, and if you specified the game launch option the game will also be started.
+2. Read how to use Asset Bundle Browser [https://docs.unity3d.com/Packages/com.unity.assetbundlebrowser@1.7/manual/index.html](here) (I believe in you)
+3. Make your content (usually into a prefab)
+4. Build it :D
