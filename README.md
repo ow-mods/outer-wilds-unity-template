@@ -1,3 +1,5 @@
+**This template is outdated and no longer actively maintained. Please go to the [modding Discord](https://discord.gg/9vE5aHxcF9) and ask JohnCorby, Bird, MegaPiggy, Trifid, or Wyrm for an invite to the new template.**
+
 # Outer Wilds : Unity Template
 Template Unity Project with Outer Wilds scripts in it, meant for making AssetBundles to use in mods (such as new horizons).
 
